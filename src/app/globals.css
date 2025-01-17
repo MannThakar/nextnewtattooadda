@@ -1,42 +1,250 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
 * {
-  box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+}
+/* Handle Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+/* Handle thumb*/
+::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 8px;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* Define the width of the scrollbar */
+/* You may need to use -moz-scrollbar-width for Firefox */
+/* Also, note that the values are 'thin', 'auto', or 'none' */
+/* 'none' hides the scrollbar */
+/* You can also use px for width */
+/* The radius of the border is set to match the desired border-radius */
+/* Webkit is used for Chrome, Safari, etc. */
+/* moz is used for Firefox */
+/* You can adjust the color and other properties as needed */
+/* Note that these styles may not work in all browsers */
+
+/* For Firefox */
+/* Thin scrollbar width */
+/* Auto hiding scrollbar */
+/* Custom scrollbar color */
+/* Custom border-radius */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #000000 #f1f1f1;
+}
+
+/* For Firefox */
+/* Thin scrollbar width */
+/* Auto hiding scrollbar */
+/* Custom scrollbar color */
+/* Custom border-radius */
+*::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* For Firefox */
+/* Thin scrollbar width */
+/* Auto hiding scrollbar */
+/* Custom scrollbar color */
+/* Custom border-radius */
+*::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background: #f1f1f1 !important;
+}
+
+/* For Firefox */
+/* Thin scrollbar width */
+/* Auto hiding scrollbar */
+/* Custom scrollbar color */
+/* Custom border-radius */
+*::-webkit-scrollbar-thumb {
+  background-color: #eaecf0;
+  border-radius: 8px;
+}
+
+/*Navbar*/
+.navbar1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid black;
+  z-index: 1000;
+  background-color: white;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.logoImg {
+  width: 120%;
+  height: 100%;
+  color: #d60516;
+  object-fit: cover;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.btn {
+  background-color: black;
+  height: 100px;
+  width: 200px;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 500;
+  word-spacing: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border: 3px solid #fcc737;
+  box-sizing: border-box;
+}
+
+.navbar {
+  height: 56px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.navbarList {
+  display: flex;
+  gap: 28px;
+  color: black;
+  list-style: none;
+  margin-left: 50px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+li:hover {
+  border-bottom: 3px solid #fcc737;
+  padding-bottom: 2px;
+  width: 100%;
+}
+
+.navIcons {
+  height: 20px;
+}
+
+/*Hero Section*/
+.container {
+  margin: auto 5rem;
+  /* margin: 0 auto; */
+  padding: 1px;
+}
+.textDiv {
+  margin-top: 80px;
+}
+
+.textDiv h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 60px;
+  line-height: 63px;
+  word-spacing: 0px;
+}
+
+.textDiv p {
+  margin-top: 10px;
+  font-size: 19px;
+  width: 95%;
+  line-height: 28px;
+  word-spacing: 2px;
+  font-weight: 400;
+}
+
+.mainDiv {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.hero-video {
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  object-fit: cover; /* Ensures the video covers the area without distortion */
+}
+
+/* span {
+  border: 3px solid #fcc737;
+  padding: 3px 10px;
+  border-radius: 50%;
+} */
+
+/*Services Section*/
+.service {
+  height: 100vh;
+  width: screen;
+}
+.serviceText {
+}
+
+.serviceTitle {
+  margin-top: 100px;
+  font-size: 60px;
+}
+
+.discover {
+  font-size: 80px;
+  padding: 3px 10px;
+}
+.serviceBody {
+  margin-top: 50px;
+  width: 50%;
+  height: 50vh;
+
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.serviceBodyLeft {
+  padding: 32px 24px;
+}
+
+.serviceBodyLeftTitle {
+  font-size: 48px;
+  font-weight: 900;
+  text-align: left;
+  width: fit-content;
+}
+
+.offer {
+  border-bottom: 5px solid #fcc737;
 }
