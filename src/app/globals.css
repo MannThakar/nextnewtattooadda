@@ -83,6 +83,22 @@
   border-radius: 8px;
 }
 
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #000000;
+  margin: 100px 0 144px 0;
+}
+.asterisk {
+  color: #fcc737;
+  font-size: 48px;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: fit-content;
+  width: fit-content;
+}
+
 /*Navbar*/
 .navbar1 {
   display: flex;
@@ -103,7 +119,7 @@
 .logoImg {
   width: 120%;
   height: 100%;
-  color: #d60516;
+
   object-fit: cover;
   cursor: pointer;
   margin-left: 15px;
@@ -171,27 +187,27 @@ li:hover {
   padding: 1px;
 }
 .textDiv {
-  margin-top: 80px;
+  margin-top: 120px;
 }
 
 .textDiv h2 {
-  font-family: "Playfair Display", serif;
+  /* font-family: "Playfair Display", serif; */
   font-size: 60px;
-  line-height: 63px;
+  line-height: 60px;
   word-spacing: 0px;
 }
 
 .textDiv p {
   margin-top: 10px;
   font-size: 19px;
-  width: 95%;
+  width: 90%;
   line-height: 28px;
   word-spacing: 2px;
   font-weight: 400;
 }
 
 .mainDiv {
-  margin-top: 50px;
+  margin-top: 72px;
   width: 100%;
 }
 
@@ -201,41 +217,30 @@ li:hover {
   object-fit: cover; /* Ensures the video covers the area without distortion */
 }
 
-/* span {
-  border: 3px solid #fcc737;
-  padding: 3px 10px;
-  border-radius: 50%;
-} */
+.heroSpan {
+  border-bottom: 3px solid #fcc737;
+}
 
 /*Services Section*/
-.service {
-  height: 100vh;
-  width: screen;
-}
-.serviceText {
-}
 
 .serviceTitle {
-  margin-top: 100px;
   font-size: 60px;
+  position: relative;
 }
-
 .discover {
   font-size: 80px;
   padding: 3px 10px;
 }
 .serviceBody {
-  margin-top: 50px;
-  width: 50%;
-  height: 50vh;
-
   border-radius: 10px;
   display: flex;
   justify-content: center;
+  margin: 72px auto;
 }
 
 .serviceBodyLeft {
-  padding: 32px 24px;
+  padding: 0px 24px;
+  width: 30%;
 }
 
 .serviceBodyLeftTitle {
@@ -245,6 +250,174 @@ li:hover {
   width: fit-content;
 }
 
+.serviceBodyLeftPara {
+  margin-top: 8px;
+  text-align: left;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.serviceBodyRight {
+  width: 60%;
+}
+
+.serviceImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.serviceBtn {
+  background-color: black;
+  height: 60px;
+  width: 200px;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 500;
+  word-spacing: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.serviceBtn:hover {
+  border: 3px solid #fcc737;
+  box-sizing: border-box;
+}
+
+/*Offer Section*/
 .offer {
   border-bottom: 5px solid #fcc737;
+}
+
+.offerTitle {
+  font-size: 20px;
+}
+.offerspan {
+  font-size: 60px;
+}
+.offerSpan2 {
+  border-bottom: 5px solid #fcc737;
+}
+
+.offers {
+  margin-top: 48px;
+  height: 95vh;
+  border-radius: 5px;
+  background-color: #000000;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+.offerHeader {
+  font-size: 64px;
+  color: white;
+  width: 95%;
+  margin: 48px auto;
+}
+.offerLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 60px;
+  padding: auto 24px;
+  margin: auto;
+  height: fit-content;
+  width: 90%;
+}
+.offerCard {
+  width: 100%;
+  height: fit-content;
+}
+.offerCardPara {
+  color: white;
+  font-size: 16px;
+  margin-top: 8px;
+}
+.smallTattoo {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.largeTattoo {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.offerCardHeader {
+  color: white;
+  font-size: 48px;
+  padding: 12px 5px;
+}
+
+.offerBtn {
+  background-color: white;
+  height: 60px;
+  width: 200px;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 12px;
+}
+.offerBtn:hover {
+  border: 3px solid #fcc737;
+  box-sizing: border-box;
+}
+
+/*Articles Section*/
+.artist {
+  height: 50vh;
+}
+
+/*Articles Section*/
+.artistTitle {
+  font-size: 60px;
+}
+.artistNames {
+  font-family: "Playfair Display", serif;
+  margin-bottom: 50px;
+}
+
+.horizontal-profile-scroller {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.horizontal-profile-scroller::-webkit-scrollbar {
+  height: 10px;
+}
+
+.horizontal-profile-scroller::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.horizontal-profile-scroller::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 10px;
+}
+
+.horizontal-profile-scroller::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.artistImg {
+  display: flex;
+  height: 500px;
+  width: 500px;
+  gap: 8px;
+  padding-left: 8px;
 }
