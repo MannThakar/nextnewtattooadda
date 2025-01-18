@@ -17,7 +17,7 @@ const HeroSection = () => {
         </div>
         <div className="mainDiv">
           <video preload="none" className="hero-video" autoPlay muted loop>
-            <source src="/assets/Hero/Banner_Video.mp4" type="video/mp4" />
+            <source src="/Hero/Banner_Video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>

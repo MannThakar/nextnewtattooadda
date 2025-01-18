@@ -1,43 +1,42 @@
-import artistOne from "../../public/assets/Artist/hemal.png";
-import artistTwo from "../../public/assets/Artist/jay.png";
-import artistThree from "../../public/assets/Artist/milan.png";
-import artistFour from "../../public/assets/Artist/parth.png";
+// import artistOne from "/Artist/hemal.png";
+// import artistTwo from "/Artist/jay.png";
+// import artistThree from "/Artist/milan.png";
 
-import bestWork1 from "../../public/assets/Bestwork/01_Bestwork.jpg";
-import bestWork2 from "../../public/assets/Bestwork/02_Bestwork.jpg";
-import bestWork3 from "../../public/assets/Bestwork/03_Bestwork.jpg";
-import bestWork5 from "../../public/assets/Bestwork/05_Bestwork.jpg";
-import bestWork7 from "../../public/assets/Bestwork/07_Bestwork.jpg";
-import bestWork8 from "../../public/assets/Bestwork/08_Bestwork.jpg";
+// import bestWork1 from "/Bestwork/01_Bestwork.jpg";
+// import bestWork2 from "/Bestwork/02_Bestwork.jpg";
+// import bestWork3 from "/Bestwork/03_Bestwork.jpg";
+// import bestWork5 from "/Bestwork/05_Bestwork.jpg";
+// import bestWork7 from "/Bestwork/07_Bestwork.jpg";
+// import bestWork8 from "/Bestwork/08_Bestwork.jpg";
 
 /*Hemal Barot Work*/
 
-export const BESTWORK_IMAGES = [
-  bestWork1,
-  bestWork2,
-  bestWork3,
-  bestWork5,
-  bestWork7,
-  bestWork8,
-];
+// export const BESTWORK_IMAGES = [
+//   bestWork1,
+//   bestWork2,
+//   bestWork3,
+//   bestWork5,
+//   bestWork7,
+//   bestWork8,
+// ];
 
 export const ARTIST_IMAGES = [
   {
     id: 1,
     name: "Hemal Barot",
-    photo: artistOne,
+    photo: "/Artist/hemal.png",
     description: "Founder",
   },
   {
     id: 2,
     name: "Jay",
-    photo: artistTwo,
+    photo: "/Artist/jay.png",
     description: "Portrait Specialist",
   },
   {
     id: 3,
     name: "Milan",
-    photo: artistThree,
+    photo: "/Artist/milan.png",
     description: "LineArt Specialist",
   },
 ];
@@ -71,25 +70,25 @@ export const FAQ_DATA = [
   },
 ];
 
-const ARTIST_DATA = [
-  {
-    name: "Hemal Barot",
-    description: "Founder",
-    photo: [],
-  },
-  {
-    name: "Jay",
-    description: "Portrait Specialist",
-    photo: artistTwo,
-  },
-  {
-    name: "Milan",
-    description: "LineArt Specialist",
-    photo: artistThree,
-  },
-  {
-    name: "Parth",
-    description: "Art School Artist",
-    photo: artistFour,
-  },
-];
+// const ARTIST_DATA = [
+//   {
+//     name: "Hemal Barot",
+//     description: "Founder",
+//     photo: [],
+//   },
+//   {
+//     name: "Jay",
+//     description: "Portrait Specialist",
+//     photo: artistTwo,
+//   },
+//   {
+//     name: "Milan",
+//     description: "LineArt Specialist",
+//     photo: artistThree,
+//   },
+//   {
+//     name: "Parth",
+//     description: "Art School Artist",
+//     photo: artistFour,
+//   },
+// ];

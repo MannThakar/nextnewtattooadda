@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import service2 from "../../../../public/assets/Service/02_Service.jpeg";
 
 const Service = () => {
   return (
@@ -26,7 +25,11 @@ const Service = () => {
               <button className="serviceBtn">Get offer now</button>
             </div>
             <div className="serviceBodyRight ">
-              <Image src={service2} alt="service" className="serviceImg" />
+              <Image
+                src="/Service/02_Service.jpeg"
+                alt="service"
+                className="serviceImg"
+              />
             </div>
           </div>
         </div>

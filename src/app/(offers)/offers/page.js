@@ -1,6 +1,6 @@
 import React from "react";
-import smallTattoo from "../../../../public/assets/Arts/01_Small_Tattoo.jpg";
-import largeTattoo from "../../../../public/assets/Arts/02_Large_Tattoo.jpg";
+// import smallTattoo from "/Arts/01_Small_Tattoo.jpg";
+// import largeTattoo from "/Arts/02_Large_Tattoo.jpg";
 import Image from "next/image";
 const Offers = () => {
   return (
@@ -15,7 +15,11 @@ const Offers = () => {
         <h2 className="offerHeader ">Limited-Time Offers</h2>
         <div className="offerLeft">
           <div className="offerCard">
-            <Image src={smallTattoo} alt="offer" className="smallTattoo" />
+            <Image
+              src="/Arts/01_Small_Tattoo.jpg"
+              alt="offer"
+              className="smallTattoo"
+            />
             <p className="offerCardPara">
               20+ flash tattoos for you, Choose any from this and get it in
             </p>
@@ -23,7 +27,11 @@ const Offers = () => {
             <button className="offerBtn">See Designs</button>
           </div>
           <div className="offerCard offerCard2">
-            <Image src={largeTattoo} alt="offer" className="largeTattoo" />
+            <Image
+              src="/Arts/02_Large_Tattoo.jpg"
+              alt="offer"
+              className="largeTattoo"
+            />
             <p className="offerCardPara">
               200+ Big tattoos for you, Choose any from this and get it in
             </p>

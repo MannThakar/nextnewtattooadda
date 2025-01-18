@@ -6,14 +6,17 @@ import {
   Info,
 } from "lucide-react";
 import Image from "next/image";
-import navbarLogo from "../../public/assets/Navbar/01_Navbar_Logo.svg";
 
 const Navbar = () => {
   return (
     <header>
       <div className="navbar1">
         <div className="logo">
-          <Image src={navbarLogo} alt="Logo" className="logoImg" />
+          <Image
+            src="/Navbar/01_Navbar_Logo.svg"
+            alt="Logo"
+            className="logoImg"
+          />
         </div>
         <div className="ctnbtn">
           <button className="btn">Get in Touch</button>

@@ -1,7 +1,7 @@
 import React from "react";
-import artistOne from "../../../../../public/assets/Artist/hemal.png";
+
 import Image from "next/image";
-import { BESTWORK_IMAGES } from "../../../../utils/constant";
+// import { BESTWORK_IMAGES } from "../../../../utils/constant";
 const IndividualArtist = async ({ params }) => {
   const { id } = await params;
 
@@ -20,7 +20,7 @@ const IndividualArtist = async ({ params }) => {
           </div>
         </div>
       </div>
-      <div className="masonry-grid">
+      {/* <div className="masonry-grid">
         {BESTWORK_IMAGES?.map((image, index) => (
           <div key={index} className="masonry-item">
             <Image
@@ -30,7 +30,7 @@ const IndividualArtist = async ({ params }) => {
             />
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };
