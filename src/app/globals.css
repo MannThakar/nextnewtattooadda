@@ -170,12 +170,16 @@ li {
   font-weight: 500;
 }
 
-li:hover {
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: black;
   border-bottom: 3px solid #fcc737;
   padding-bottom: 2px;
-  width: 100%;
+  width: fit-content;
 }
-
 .navIcons {
   height: 20px;
 }
@@ -225,7 +229,6 @@ li:hover {
 
 .serviceTitle {
   font-size: 60px;
-  position: relative;
 }
 .discover {
   font-size: 80px;
@@ -304,7 +307,6 @@ li:hover {
 
 .offers {
   margin-top: 48px;
-  height: 95vh;
   border-radius: 5px;
   background-color: #000000;
   overflow: hidden;
@@ -330,6 +332,7 @@ li:hover {
 .offerCard {
   width: 100%;
   height: fit-content;
+  margin-bottom: 20px;
 }
 .offerCardPara {
   color: white;
@@ -417,7 +420,282 @@ li:hover {
 .artistImg {
   display: flex;
   height: 500px;
-  width: 500px;
+  width: 490px;
   gap: 8px;
   padding-left: 8px;
+}
+
+/*FAQ*/
+.faq-container {
+  margin: 100px auto 150px;
+  padding: 48px 24px;
+  font-family: Arial, sans-serif;
+}
+
+.faq-title {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.faq-subtitle {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  padding: 16px 24px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: #f9f9f9;
+}
+
+.faq-icon {
+  font-size: 12px;
+  transition: transform 0.3s ease;
+}
+
+.faq-icon-open {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  padding: 16px 24px;
+  background-color: #fff;
+  border-top: 1px solid #e0e0e0;
+}
+
+.faq-answer p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  padding: 15px 20px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: #f0f0f0;
+}
+
+.faq-icon {
+  font-size: 1.5em;
+}
+
+.faq-answer {
+  padding: 15px 20px;
+  background-color: #fff;
+  border-top: 1px solid #e0e0e0;
+}
+/*Footer*/
+:root {
+  --footer-bg-color: #000000;
+  --footer-text-color: #ffffff;
+  --footer-link-hover-color: #cccccc;
+  --footer-border-color: #333333;
+  --footer-font-family: Arial, sans-serif;
+}
+
+.footer {
+  background-color: var(--footer-bg-color);
+  color: var(--footer-text-color);
+  font-family: var(--footer-font-family);
+  padding: 2rem 1rem;
+}
+
+.footer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer__social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.footer__social-link {
+  color: var(--footer-text-color);
+  text-decoration: none;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.footer__social-link:hover {
+  color: var(--footer-link-hover-color);
+  text-decoration: underline;
+}
+
+.footer__divider {
+  border: none;
+  border-top: 1px solid var(--footer-border-color);
+  margin: 2rem 0;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+
+.footer__slogan {
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.875rem;
+}
+
+.footer__link {
+  color: var(--footer-text-color);
+  text-decoration: none;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer__link:hover {
+  color: var(--footer-link-hover-color);
+  text-decoration: underline;
+}
+
+.footer__copyright {
+  font-size: 0.875rem;
+}
+
+.footer__logo {
+  position: relative;
+}
+
+.footer__logo-text {
+  font-size: 8rem;
+  font-weight: bold;
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+
+.footer__logo-trademark {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 1.5rem;
+}
+
+/*Individual Page*/
+.individualArtist {
+  margin-top: 40px;
+}
+
+.individualArtistImage {
+  background-color: black;
+  height: 80vh;
+  width: 100%;
+  color: white;
+  display: flex;
+}
+
+.individualArtistName {
+  margin-top: 12px;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.individualArtistTitle {
+  font-size: 48px;
+  border-bottom: 3px solid #fcc737;
+  width: fit-content;
+}
+.individualArtistPara {
+  font-size: 22px;
+  width: 80%;
+}
+.masonry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.masonry-item {
+  break-inside: avoid;
+  position: relative;
+  width: 100%;
+}
+
+/* This assumes Image component renders to an img tag */
+.artistWork {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  object-fit: cover;
+}
+
+.artistWork:hover {
+  transform: scale(1.02);
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1200px) {
+  .masonry-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .masonry-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .masonry-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
 }

@@ -4,7 +4,7 @@ import largeTattoo from "../../../../public/assets/Arts/02_Large_Tattoo.jpg";
 import Image from "next/image";
 const Offers = () => {
   return (
-    <div>
+    <div id="work">
       <h1 className="offerTitle container">
         Your Story, <br />
         <span className="offerspan">

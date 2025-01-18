@@ -1,7 +1,7 @@
 const HeroSection = () => {
   return (
     <>
-      <div className="container">
+      <div className="container" id="home">
         <div className="textDiv">
           <h2>Unleash Your Style,</h2>
           <h2>Wear Your Story,</h2>

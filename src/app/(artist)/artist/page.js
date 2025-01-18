@@ -32,7 +32,7 @@ const Artists = () => {
   }, [scrollPosition]);
 
   return (
-    <>
+    <div id="artist">
       <h1 className="artistTitle container">Meet the Masters Behind the Ink</h1>
       <div className="horizontal-profile-scroller" ref={scrollerRef}>
         {ARTIST_IMAGES?.map((profile, index) => (
@@ -45,7 +45,7 @@ const Artists = () => {
         ))}
       </div>
       <div className="divider"></div>
-    </>
+    </div>
   );
 };
 

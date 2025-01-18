@@ -5,7 +5,7 @@ import service2 from "../../../../public/assets/Service/02_Service.jpeg";
 const Service = () => {
   return (
     <>
-      <div className="service">
+      <div className="service" id="service">
         <div className="container">
           <div className="serviceHeader">
             <h2 className="serviceTitle">

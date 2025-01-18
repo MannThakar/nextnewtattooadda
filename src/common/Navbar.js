@@ -23,28 +23,40 @@ const Navbar = () => {
       <nav className="navbar">
         <ul className="navbarList">
           <li>
-            <House className="navIcons" />
-            Home
+            <a href="#home">
+              <House className="navIcons" />
+              Home
+            </a>
           </li>
           <li>
-            <FolderHeart className="navIcons" />
-            Work
+            <a href="#work">
+              <FolderHeart className="navIcons" />
+              Work
+            </a>
           </li>
           <li>
-            <PencilRuler className="navIcons" />
-            Services
+            <a href="#service">
+              <PencilRuler className="navIcons" />
+              Services
+            </a>
           </li>
           <li>
-            <MessageCircleQuestion className="navIcons" />
-            FAQs
+            <a href="#faq">
+              <MessageCircleQuestion className="navIcons" />
+              FAQs
+            </a>
           </li>
           <li>
-            <FolderHeart className="navIcons" />
-            Artist
+            <a href="#artist">
+              <FolderHeart className="navIcons" />
+              Artist
+            </a>
           </li>
           <li>
-            <Info className="navIcons" />
-            About
+            <a href="#footer">
+              <Info className="navIcons" />
+              About
+            </a>
           </li>
         </ul>
       </nav>
