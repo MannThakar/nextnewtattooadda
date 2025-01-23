@@ -16,6 +16,8 @@ const Navbar = () => {
             src="/Navbar/01_Navbar_Logo.svg"
             alt="Logo"
             className="logoImg"
+            width={100}
+            height={100}
           />
         </div>
         <div className="ctnbtn">

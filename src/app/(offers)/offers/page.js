@@ -1,6 +1,5 @@
 import React from "react";
-// import smallTattoo from "/Arts/01_Small_Tattoo.jpg";
-// import largeTattoo from "/Arts/02_Large_Tattoo.jpg";
+
 import Image from "next/image";
 const Offers = () => {
   return (
@@ -19,6 +18,8 @@ const Offers = () => {
               src="/Arts/01_Small_Tattoo.jpg"
               alt="offer"
               className="smallTattoo"
+              width={500}
+              height={500}
             />
             <p className="offerCardPara">
               20+ flash tattoos for you, Choose any from this and get it in
@@ -31,6 +32,8 @@ const Offers = () => {
               src="/Arts/02_Large_Tattoo.jpg"
               alt="offer"
               className="largeTattoo"
+              width={500}
+              height={500}
             />
             <p className="offerCardPara">
               200+ Big tattoos for you, Choose any from this and get it in

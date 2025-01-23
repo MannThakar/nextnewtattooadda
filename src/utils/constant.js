@@ -1,7 +1,3 @@
-// import artistOne from "/Artist/hemal.png";
-// import artistTwo from "/Artist/jay.png";
-// import artistThree from "/Artist/milan.png";
-
 // import bestWork1 from "/Bestwork/01_Bestwork.jpg";
 // import bestWork2 from "/Bestwork/02_Bestwork.jpg";
 // import bestWork3 from "/Bestwork/03_Bestwork.jpg";
@@ -26,6 +22,18 @@ export const ARTIST_IMAGES = [
     name: "Hemal Barot",
     photo: "/Artist/hemal.png",
     description: "Founder",
+  },
+  {
+    id: 2,
+    name: "Jay",
+    photo: "/Artist/jay.png",
+    description: "Portrait Specialist",
+  },
+  {
+    id: 3,
+    name: "Milan",
+    photo: "/Artist/milan.png",
+    description: "LineArt Specialist",
   },
   {
     id: 2,

@@ -41,6 +41,8 @@ const Artists = () => {
             src={profile.photo}
             alt="artist"
             className="artistImg"
+            width={500}
+            height={500}
           />
         ))}
       </div>
