@@ -6,6 +6,7 @@ import {
   Info,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -16,6 +17,8 @@ const Navbar = () => {
             src="/Navbar/01_Navbar_Logo.svg"
             alt="Logo"
             className="logoImg"
+            width={100}
+            height={100}
           />
         </div>
         <div className="ctnbtn">
@@ -26,10 +29,10 @@ const Navbar = () => {
       <nav className="navbar">
         <ul className="navbarList">
           <li>
-            <a href="#home">
+            <Link href="/">
               <House className="navIcons" />
               Home
-            </a>
+            </Link>
           </li>
           <li>
             <a href="#work">

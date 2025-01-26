@@ -10,36 +10,38 @@ const FAQ = () => {
 
   return (
     <>
-      <div className="faq-container container" id="faq">
-        <h1 className="faq-title">FAQs</h1>
-        <h2 className="faq-subtitle">Frequently Asked Questions</h2>
-        <div className="faq-list">
-          {FAQ_DATA.map((item, index) => (
-            <div key={index} className="faq-item">
-              <button
-                className="faq-question"
-                onClick={() => toggleAnswer(index)}
-                aria-expanded={openIndex === index}
-              >
-                <span>{item.question}</span>
-                <span
-                  className={`faq-icon ${
-                    openIndex === index ? "faq-icon-open" : ""
-                  }`}
+      <div className="container">
+        <div className="faq-container " id="faq">
+          <h1 className="faq-title offerTitles">
+            Got Questions? We Have Answers!
+          </h1>
+          <div className="faq-list">
+            {FAQ_DATA.map((item, index) => (
+              <div key={index} className="faq-item">
+                <button
+                  className="faq-question"
+                  onClick={() => toggleAnswer(index)}
+                  aria-expanded={openIndex === index}
                 >
-                  &#x25BC;
-                </span>
-              </button>
-              {openIndex === index && (
-                <div className="faq-answer">
-                  <p>{item.answer}</p>
-                </div>
-              )}
-            </div>
-          ))}
+                  <span>{item.question}</span>
+                  <span
+                    className={`faq-icon ${
+                      openIndex === index ? "faq-icon-open" : ""
+                    }`}
+                  >
+                    &#x25BC;
+                  </span>
+                </button>
+                {openIndex === index && (
+                  <div className="faq-answer">
+                    <p>{item.answer}</p>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-      <div className="divider" />
     </>
   );
 };

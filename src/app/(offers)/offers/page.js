@@ -1,46 +1,59 @@
 import React from "react";
-// import smallTattoo from "/Arts/01_Small_Tattoo.jpg";
-// import largeTattoo from "/Arts/02_Large_Tattoo.jpg";
+
 import Image from "next/image";
 const Offers = () => {
   return (
     <div id="work">
-      <h1 className="offerTitle container">
-        Your Story, <br />
-        <span className="offerspan">
-          Inked the <span className="offerSpan2">TattooAdda</span> Way
-        </span>
-      </h1>
-      <div className="offers container">
-        <h2 className="offerHeader ">Limited-Time Offers</h2>
-        <div className="offerLeft">
-          <div className="offerCard">
-            <Image
-              src="/Arts/01_Small_Tattoo.jpg"
-              alt="offer"
-              className="smallTattoo"
-            />
-            <p className="offerCardPara">
-              20+ flash tattoos for you, Choose any from this and get it in
-            </p>
-            <h2 className="offerCardHeader">Offer Price Rs 500/-</h2>
-            <button className="offerBtn">See Designs</button>
+      <div className="container offerTattoo">
+        <h2 className="offerTitles">
+          Get Your Dream Tattoo at
+          <span className="offerSpan"> Dream Prices</span>
+        </h2>
+        <div className="smallTattoo">
+          <Image
+            src="/Arts/01_Small_Tattoo.jpg"
+            alt="Offers"
+            width={500}
+            height={500}
+            className="smallTattooImg"
+          />
+          <div className="smallTattooRight">
+            <div className="smallTattooRightText">
+              <h4>
+                20+ flash tattoos for you, Choose any from this and get it in
+              </h4>
+              <p>
+                Change up your look, play with your style, and experiment
+                confidently with Inkbox, the ultimate self-expression accessory!
+              </p>
+              <h2>Offer Price Rs 499/-</h2>
+              <button className="smallTattooRightBtn">Get offer now</button>
+            </div>
           </div>
-          <div className="offerCard offerCard2">
-            <Image
-              src="/Arts/02_Large_Tattoo.jpg"
-              alt="offer"
-              className="largeTattoo"
-            />
-            <p className="offerCardPara">
-              200+ Big tattoos for you, Choose any from this and get it in
-            </p>
-            <h2 className="offerCardHeader">Offer Price Rs 14,XXX/-</h2>
-            <button className="offerBtn">See Designs</button>
+        </div>
+        <div className="smallTattoo largeTattoo">
+          <Image
+            src="/Arts/02_Large_Tattoo.jpg"
+            alt="Offers"
+            width={500}
+            height={500}
+            className="smallTattooImg"
+          />
+          <div className="smallTattooRight">
+            <div className="smallTattooRightText">
+              <h4>
+                200+ Big tattoos for you, Choose any from this and get it in
+              </h4>
+              <p>
+                Change up your look, play with your style, and experiment
+                confidently with Inkbox, the ultimate self-expression accessory!
+              </p>
+              <h2>Offer Price Rs 10,XXX/-</h2>
+              <button className="smallTattooRightBtn">Get offer now</button>
+            </div>
           </div>
         </div>
       </div>
-      <div className="divider"></div>
     </div>
   );
 };
