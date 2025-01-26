@@ -10,7 +10,10 @@ const HeroSection = () => {
         </div>
         <div className="heroContainer">
           <div className="textDiv">
-            <h2>Crafting Masterpieces That Last Forever.</h2>
+            <h2>
+              Crafting Masterpieces With
+              <span className="heroSpan"> Tatto Adda</span>
+            </h2>
             <h4>Safe, clean, and creative tattooing services.</h4>
           </div>
           <div className="btnDiv">

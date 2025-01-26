@@ -1,13 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nerko+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
+}
+:root {
+  --background: #e4fff7;
+  --shadow: #e585f87f;
+  --text: #1e40af;
 }
 /* Handle Scrollbar */
 ::-webkit-scrollbar {
@@ -81,22 +86,6 @@
 *::-webkit-scrollbar-thumb {
   background-color: #eaecf0;
   border-radius: 8px;
-}
-
-.divider {
-  width: 100%;
-  height: 1px;
-  background-color: #000000;
-  margin: 100px 0 144px 0;
-}
-.asterisk {
-  color: #fcc737;
-  font-size: 48px;
-  position: relative;
-  top: 0;
-  left: 0;
-  height: fit-content;
-  width: fit-content;
 }
 
 /*Navbar*/
@@ -186,21 +175,30 @@ a:hover {
 
 /*Hero Section*/
 .container {
-  margin: auto 14rem;
+  margin: auto 5rem;
   /* margin: 0 auto; */
   padding: 1px;
 }
 
 .textDiv {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 28px;
 }
 
 .textDiv h2 {
   /* font-family: "Playfair Display", serif; */
-  font-size: 36px;
+  font-family: "Bebas Neue", serif;
+  font-weight: 400;
+  font-size: 52px;
   line-height: 60px;
-  word-spacing: 0px;
+  letter-spacing: 5px;
+  font-weight: bolder;
+}
+.heroSpan {
+  font-family: "Bebas Neue", serif;
+  mix-blend-mode: screen; /* Try a different blend mode */
+  color: #1e40af; /* Use contrasting colors */
+  text-shadow: 6px 6px var(--shadow), 3px 3px var(--shadow);
 }
 
 .textDiv p {
@@ -220,32 +218,35 @@ a:hover {
 }
 
 .hero-video {
-  width: 80%; /* Full width */
-  height: 50%; /* Full height */
+  width: 100%; /* Full width */
+  height: 40%; /* Full height */
 }
 
-.heroSpan {
-  border-bottom: 3px solid #fcc737;
-}
 .btnDiv {
   display: flex;
   justify-content: center;
 }
+
 .heroBtn {
   margin: 20px auto;
   background-color: #1e40af;
-  padding: 20px 60px;
+  padding: 15px 30px;
   color: white;
   border: none;
   font-weight: 600;
   cursor: pointer;
   border-radius: 5px;
+  font-weight: bold;
   transition: background-color 0.3s ease;
 }
 
 /*Services Section*/
 .service {
-  margin-top: 100px;
+  margin-top: 80px;
+}
+.smallTattoo {
+  border: #000 solid 2px;
+  box-shadow: 5px 5px #1c87c9, 10px 10px #ccc, 15px 15px #000;
 }
 .serviceBody {
   display: flex;
@@ -261,10 +262,11 @@ a:hover {
 }
 
 .serviceBodyLeftTitle {
-  font-size: 36px;
-  font-weight: 900;
+  font-family: "Bebas Neue", serif;
+  font-size: 40px;
+  font-weight: bold;
   text-align: left;
-  width: fit-content;
+  letter-spacing: 5px;
 }
 
 .serviceBodyLeftPara {
@@ -279,6 +281,12 @@ a:hover {
   width: 60%;
 }
 
+.offer {
+  font-family: "Bebas Neue", serif;
+  color: #1e40af;
+  text-shadow: 5px 5px 0px #ddd;
+}
+
 .serviceImg {
   width: 100%;
   height: 100%;
@@ -286,18 +294,17 @@ a:hover {
 }
 
 .serviceBtn {
-  background-color: black;
-  height: 60px;
-  width: 200px;
-  font-size: 17px;
+  background-color: #1e40af;
+  padding: 15px 30px;
+  font-size: 14px;
   text-transform: uppercase;
   color: white;
   font-weight: 500;
-  word-spacing: 10px;
   outline: none;
   border: none;
   cursor: pointer;
   margin-top: 24px;
+  border-radius: 5px;
 }
 
 .serviceBtn:hover {
@@ -306,8 +313,26 @@ a:hover {
 }
 
 /*Offer Section*/
+.offerTattoo {
+  margin-top: 120px;
+}
+.offerTitles {
+  font-family: "Bebas Neue", serif;
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  margin-bottom: 16px;
+}
+.largeTattoo {
+  margin-top: 80px;
+}
+.offerSpan {
+  font-family: "Bebas Neue", serif;
+  mix-blend-mode: screen; /* Try a different blend mode */
+  color: #1e40af; /* Use contrasting colors */
+  text-shadow: 5px 5px 0px #ddd;
+}
 .smallTattoo {
-  margin-top: 100px;
   display: flex;
   gap: 100px;
 }
@@ -326,12 +351,15 @@ a:hover {
   font-size: 24px;
 }
 .smallTattooRightText p {
-  margin-top: 24px;
-  font-size: 16px;
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 600;
 }
 .smallTattoo h2 {
   margin-top: 24px;
   font-size: 36px;
+  font-family: "Bebas Neue", serif;
+  letter-spacing: 4px;
 }
 .smallTattooRightBtn {
   margin-top: 24px;
@@ -344,75 +372,77 @@ a:hover {
   outline: none;
   border: none;
   cursor: pointer;
+  border-radius: 5px;
+}
+
+.bigTattoo {
+  display: flex;
+  gap: 100px;
+}
+.bigTattooText {
+  width: 80%;
+}
+.bigTattooImg {
+  object-fit: contain;
+  width: 100%;
 }
 
 /*Articles Section*/
 .artist {
-  height: 50vh;
-}
-
-/*Articles Section*/
-.artistTitle {
-  font-size: 60px;
-}
-.artistNames {
-  font-family: "Playfair Display", serif;
-  margin-bottom: 50px;
-}
-
-.horizontal-profile-scroller {
-  display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.horizontal-profile-scroller::-webkit-scrollbar {
-  height: 10px;
-}
-
-.horizontal-profile-scroller::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 10px;
-}
-
-.horizontal-profile-scroller::-webkit-scrollbar-thumb {
-  background: #000;
-  border-radius: 10px;
-}
-
-.horizontal-profile-scroller::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  margin-top: 100px;
 }
 
 .artistImg {
   display: flex;
-  height: 500px;
-  width: 490px;
-  gap: 8px;
-  padding-left: 8px;
+}
+
+/*Best Work Section*/
+.bestwork {
+  margin-top: 120px;
+}
+.bestworkContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.bestworkGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  justify-items: center;
+}
+.bestworkImg {
+  object-fit: cover;
+}
+.bestworkBtnDiv {
+  display: flex;
+  justify-content: center;
+}
+.bestworkBtn {
+  margin-top: 10px;
+  background-color: #000;
+  padding: 15px 40px;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: fit-content;
 }
 
 /*FAQ*/
 .faq-container {
-  margin: 100px auto 150px;
-  padding: 48px 24px;
+  margin: 100px auto 100px;
   font-family: Arial, sans-serif;
 }
 
 .faq-title {
-  font-size: 36px;
+  font-size: 48px;
   font-weight: bold;
-  text-align: center;
   margin-bottom: 8px;
-}
-
-.faq-subtitle {
-  font-size: 18px;
-  text-align: center;
-  margin-bottom: 32px;
 }
 
 .faq-list {
@@ -578,13 +608,16 @@ a:hover {
 
 .footer__logo {
   position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer__logo-text {
-  font-size: 8rem;
+  font-size: 6rem;
   font-weight: bold;
   letter-spacing: -0.05em;
   line-height: 1;
+  width: 50%;
 }
 
 .footer__logo-trademark {
@@ -593,79 +626,71 @@ a:hover {
   right: 0;
   font-size: 1.5rem;
 }
-
-/*Individual Page*/
-.individualArtist {
-  margin-top: 40px;
+.footer__map {
+  width: 50%;
+  border-radius: 5px;
 }
 
-.individualArtistImage {
-  background-color: black;
-  height: 80vh;
-  width: 100%;
-  color: white;
+/*Individual Page*/
+.individualArtistTitle {
+  font-family: "Bebas Neue", serif;
+  font-size: 50px;
+  margin-top: 60px;
   display: flex;
+  justify-content: center;
+}
+.individualArtist {
+  display: flex;
+  margin-top: 20px;
+  gap: 60px;
+}
+.individualArtistProfile {
+  width: 40%;
+}
+.individualArtistImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.individualArtistBio {
+  width: 50%;
+  height: 10vh;
+}
+.individualArtistLink {
+  margin-top: 16px;
 }
 
 .individualArtistName {
-  margin-top: 12px;
-  font-size: 28px;
-  font-weight: 900;
+  font-family: "Bebas Neue", serif;
+  font-size: 50px;
+  margin-bottom: 10px;
+  margin-top: 40px;
 }
-
-.individualArtistTitle {
-  font-size: 48px;
-  border-bottom: 3px solid #fcc737;
-  width: fit-content;
+.individualArtistDescription {
+  margin-top: 16px;
 }
-.individualArtistPara {
-  font-size: 22px;
-  width: 80%;
-}
-.masonry-grid {
+.individualArtistAd {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-  padding: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.individualArtistBestWork {
+  margin-top: 100px;
 }
 
-.masonry-item {
-  break-inside: avoid;
-  position: relative;
+.individualArtistImg {
   width: 100%;
-}
-
-/* This assumes Image component renders to an img tag */
-.artistWork {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
+  height: 100%;
   object-fit: cover;
 }
 
-.artistWork:hover {
-  transform: scale(1.02);
+.individualArtAdImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin-top: 20px;
 }
-
-/* Responsive breakpoints */
-@media (max-width: 1200px) {
-  .masonry-grid {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  }
-}
-
-@media (max-width: 768px) {
-  .masonry-grid {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  .masonry-grid {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
+.individualArtistAd {
+  margin-bottom: 100px;
 }

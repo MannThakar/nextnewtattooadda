@@ -1,52 +1,51 @@
 "use client";
-import { useState, useRef, useEffect } from "react";
-import { ARTIST_IMAGES } from "@/utils/constant";
+
+import Carousel from "react-multi-carousel";
+import { ARTIST_DATA } from "@/utils/constant";
+import "react-multi-carousel/lib/styles.css";
 import Image from "next/image";
+import Link from "next/link";
+
+const responsive = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5,
+  },
+  desktop: {
+    breakpoint: { max: 2000, min: 1024 },
+    items: 3,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+  },
+};
 
 const Artists = () => {
-  const [scrollPosition, setScrollPosition] = useState(0);
-  const scrollerRef = useRef(null);
-
-  const handleScroll = (scrollOffset) => {
-    const newPosition = scrollPosition + scrollOffset;
-    const maxScroll =
-      scrollerRef.current.scrollWidth - scrollerRef.current.clientWidth;
-    setScrollPosition(Math.max(0, Math.min(newPosition, maxScroll)));
-  };
-
-  useEffect(() => {
-    const handleKeyDown = (event) => {
-      if (event.key === "ArrowRight") {
-        handleScroll(200);
-      } else if (event.key === "ArrowLeft") {
-        handleScroll(-200);
-      }
-    };
-
-    window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [scrollPosition]);
-
-  useEffect(() => {
-    scrollerRef.current.scrollLeft = scrollPosition;
-  }, [scrollPosition]);
-
   return (
-    <div id="artist">
-      <h1 className="artistTitle container">Meet the Masters Behind the Ink</h1>
-      <div className="horizontal-profile-scroller" ref={scrollerRef}>
-        {ARTIST_IMAGES?.map((profile, index) => (
-          <Image
-            key={index}
-            src={profile.photo}
-            alt="artist"
-            className="artistImg"
-            width={500}
-            height={500}
-          />
+    <div id="artist" className="artist ">
+      <h2 className="offerTitles container">
+        Meet the Masters <span className="offerSpan"> Behind the Ink</span>
+      </h2>
+      <Carousel responsive={responsive}>
+        {ARTIST_DATA?.map((profile, index) => (
+          <Link key={index} href={`/artist/${profile.id}`}>
+            <Image
+              key={index}
+              src={profile.profilePic}
+              alt="artist"
+              className="artistImg"
+              width={500}
+              height={500}
+            />
+          </Link>
         ))}
-      </div>
-      <div className="divider"></div>
+      </Carousel>
     </div>
   );
 };

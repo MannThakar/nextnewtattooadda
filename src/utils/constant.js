@@ -1,20 +1,15 @@
-// import bestWork1 from "/Bestwork/01_Bestwork.jpg";
-// import bestWork2 from "/Bestwork/02_Bestwork.jpg";
-// import bestWork3 from "/Bestwork/03_Bestwork.jpg";
-// import bestWork5 from "/Bestwork/05_Bestwork.jpg";
-// import bestWork7 from "/Bestwork/07_Bestwork.jpg";
-// import bestWork8 from "/Bestwork/08_Bestwork.jpg";
-
 /*Hemal Barot Work*/
 
-// export const BESTWORK_IMAGES = [
-//   bestWork1,
-//   bestWork2,
-//   bestWork3,
-//   bestWork5,
-//   bestWork7,
-//   bestWork8,
-// ];
+export const BESTWORK_IMAGES = [
+  "/Bestwork/01_Bestwork.jpg",
+  "/Bestwork/02_Bestwork.jpg",
+  "/Bestwork/03_Bestwork.jpg",
+  "/Bestwork/05_Bestwork.jpg",
+  "/Bestwork/07_Bestwork.jpg",
+  "/Bestwork/08_Bestwork.jpg",
+  "/Bestwork/07_Bestwork.jpg",
+  "/Bestwork/08_Bestwork.jpg",
+];
 
 export const ARTIST_IMAGES = [
   {
@@ -78,25 +73,55 @@ export const FAQ_DATA = [
   },
 ];
 
-// const ARTIST_DATA = [
-//   {
-//     name: "Hemal Barot",
-//     description: "Founder",
-//     photo: [],
-//   },
-//   {
-//     name: "Jay",
-//     description: "Portrait Specialist",
-//     photo: artistTwo,
-//   },
-//   {
-//     name: "Milan",
-//     description: "LineArt Specialist",
-//     photo: artistThree,
-//   },
-//   {
-//     name: "Parth",
-//     description: "Art School Artist",
-//     photo: artistFour,
-//   },
-// ];
+export const ARTIST_DATA = [
+  {
+    id: 1,
+    name: "Hemal",
+    description: "Founder",
+    profilePic: "/Artist/hemal.png",
+    photo: [
+      "/IndividualArtist/Hemal/01_Hemal.jpg",
+      "/IndividualArtist/Hemal/02_Hemal.jpg",
+      "/IndividualArtist/Hemal/03_Hemal.jpg",
+      "/IndividualArtist/Hemal/04_Hemal.jpg",
+      "/IndividualArtist/Hemal/05_Hemal.jpg",
+      "/IndividualArtist/Hemal/06_Hemal.jpg",
+      "/IndividualArtist/Hemal/07_Hemal.jpg",
+      "/IndividualArtist/Hemal/08_Hemal.jpg",
+    ],
+    profileDescription:
+      "Hemal, the visionary founder of our tattoo studio, brings creativity and passion to life through ink. With a deep love for art and a knack for innovation, Hemal has not only built a haven for tattoo enthusiasts but also established a standard for artistic excellence. Known for their meticulous attention to detail and personalized approach, Hemal ensures every design tells a story and resonates with meaning. Their leadership and artistic flair have made the studio a trusted name in the tattoo community",
+  },
+  {
+    id: 2,
+    name: "Jay",
+    description: "Portrait Specialist",
+    profilePic: "/Artist/jay.png",
+    photo: [
+      "/IndividualArtist/Jay/01_Jay.jpg",
+      "/IndividualArtist/Jay/02_Jay.jpg",
+      "/IndividualArtist/Jay/03_Jay.jpg",
+      "/IndividualArtist/Jay/04_Jay.jpg",
+      "/IndividualArtist/Jay/05_Jay.jpg",
+      "/IndividualArtist/Jay/06_Jay.jpg",
+      "/IndividualArtist/Jay/07_Jay.jpg",
+      "/IndividualArtist/Jay/08_Jay.jpg",
+    ],
+    profileDescription:
+      "Jay, our talented Portrait Specialist, has a remarkable gift for turning emotions and memories into breathtaking works of art. With an eye for intricate details and a passion for capturing life-like expressions, Jay creates tattoos that feel as vivid as the moments they represent. From heartfelt tributes to iconic figures, Jay’s expertise ensures every portrait is a masterpiece etched in ink. Their dedication to perfection and ability to connect with clients make each tattoo not just a design, but a cherished memory.",
+  },
+  {
+    id: 3,
+    name: "Milan",
+    description: "LineArt Specialist",
+    profilePic: "/Artist/milan.png",
+    photo: [
+      "/IndividualArtist/Milan/01_Milan.jpg",
+      "/IndividualArtist/Milan/02_Milan.jpg",
+      "/IndividualArtist/Milan/03_Milan.jpg",
+      "/IndividualArtist/Milan/04_Milan.jpg",
+    ],
+    profileDescription:
+      "Milan, our skilled LineArt Specialist, has mastered the beauty of simplicity through bold and precise lines. With a keen eye for clean designs and intricate patterns, Milan transforms minimalist ideas into striking tattoos that speak volumes. Whether it’s geometric art, abstract concepts, or delicate linework, Milan’s steady hand and artistic vision ensure every piece is both elegant and unforgettable. Their passion for precision and creativity makes them the go-to artist for those seeking timeless and sophisticated ink.",
+  },
+];
