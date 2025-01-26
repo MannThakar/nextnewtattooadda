@@ -98,7 +98,7 @@ export const ARTIST_DATA = [
     description: "Portrait Specialist",
     profilePic: "/Artist/jay.png",
     photo: [
-      "/IndividualArtist/Jay/01_Jay.jpg",
+      "/IndividualArtist/Jay/01_jay.jpg",
       "/IndividualArtist/Jay/02_Jay.jpg",
       "/IndividualArtist/Jay/03_Jay.jpg",
       "/IndividualArtist/Jay/04_Jay.jpg",
