@@ -1,7 +1,8 @@
 "use client";
 
-import Carousel from "react-multi-carousel";
 import { ARTIST_DATA } from "@/utils/constant";
+
+import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,7 +14,7 @@ const responsive = {
     items: 5,
   },
   desktop: {
-    breakpoint: { max: 2000, min: 1024 },
+    breakpoint: { max: 3000, min: 1024 },
     items: 3,
   },
   tablet: {
@@ -25,27 +26,28 @@ const responsive = {
     items: 1,
   },
 };
-
 const Artists = () => {
   return (
     <div id="artist" className="artist ">
       <h2 className="offerTitles container">
         Meet the Masters <span className="offerSpan"> Behind the Ink</span>
       </h2>
-      <Carousel responsive={responsive}>
-        {ARTIST_DATA?.map((profile, index) => (
-          <Link key={index} href={`/artist/${profile.id}`}>
-            <Image
-              key={index}
-              src={profile.profilePic}
-              alt="artist"
-              className="artistImg"
-              width={500}
-              height={500}
-            />
-          </Link>
-        ))}
-      </Carousel>
+      <div className="slider-container">
+        <Carousel responsive={responsive}>
+          {ARTIST_DATA?.map((profile, index) => (
+            <Link key={index} href={`/artist/${profile.id}`}>
+              <Image
+                key={index}
+                src={profile.profilePic}
+                alt="artist"
+                className="artistImg"
+                width={500}
+                height={500}
+              />
+            </Link>
+          ))}
+        </Carousel>
+      </div>
     </div>
   );
 };

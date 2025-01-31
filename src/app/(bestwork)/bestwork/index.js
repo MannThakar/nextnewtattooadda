@@ -1,7 +1,6 @@
 "use client";
 
 import { BESTWORK_IMAGES } from "@/utils/constant";
-import "react-multi-carousel/lib/styles.css";
 import Image from "next/image";
 
 const Bestwork = () => {
