@@ -12,7 +12,7 @@ const Reward = () => {
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 4,
+      items: 5,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -26,7 +26,7 @@ const Reward = () => {
   return (
     <div className="reward">
       <Carousel responsive={responsive} infinite autoPlay draggable swipeable>
-        {Array(4)
+        {Array(10)
           .fill(0)
           .map((_, index) => (
             <div key={index}>
