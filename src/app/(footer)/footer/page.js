@@ -21,7 +21,7 @@ const Footer = () => {
             <Link href="#" className="footer__social-link">
               Youtube
             </Link>
-            <Link href="#" className="footer__social-link">
+            {/* <Link href="#" className="footer__social-link">
               LinkedIn
             </Link>
             <Link href="#" className="footer__social-link">
@@ -32,7 +32,7 @@ const Footer = () => {
             </Link>
             <Link href="#" className="footer__social-link">
               Pinterest
-            </Link>
+            </Link> */}
           </div>
 
           <hr className="footer__divider" />

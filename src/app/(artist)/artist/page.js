@@ -40,8 +40,10 @@ const Artists = () => {
               src={profile.profilePic}
               alt="artist"
               className="artistImg"
-              width={500}
-              height={500}
+
+              // Remove this props to make image responsive
+              width={400}
+              height={300}
             />
           </Link>
         ))}

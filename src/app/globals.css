@@ -394,6 +394,8 @@ a:hover {
 
 .artistImg {
   display: flex;
+  width: 400px;
+  height: 400px;
 }
 
 /*Best Work Section*/
@@ -693,4 +695,383 @@ a:hover {
 }
 .individualArtistAd {
   margin-bottom: 100px;
+}
+
+
+.responsive-class {
+  font-size: 14px; /* Default for mobile */
+  padding: 10px;
+}
+
+
+
+
+@media (min-width: 550px) and (max-width: 1024px)  { /* Tablets */
+
+/* Home page */
+
+li {
+  font-size: 14px;
+}
+.navbarList {
+  gap: 24px;
+}
+.navbar {
+  height: 44px;
+}
+.btn {
+  background-color: #000;
+  height: 90px;
+}
+.logo {
+  width: 109px;
+  height: 90px;
+}
+
+
+.textDiv h2 {
+  font-size: 50px;
+  line-height: 50px;
+}
+
+  .serviceBody {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.serviceBodyLeft {
+  max-width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 0 0 0;
+}
+
+.serviceBodyRight {
+  width: 89%;
+}
+
+.serviceBodyLeftTitle {
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+.textBox {
+  /* height: 300px; */
+  width: 100%;
+}
+
+.smallTattoo {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.smallTattooRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 28px;
+}
+
+
+
+
+/* Dream Price */
+.offerTitles {
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+.smallTattooImg {
+  object-fit: contain;
+  width: 95%;
+  height: 95%;
+}
+
+
+.bestworkImg {
+  object-fit: fill;
+}
+
+
+
+.bestworkGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 17px;
+  justify-items: center;
+}
+
+
+
+
+
+
+
+}
+
+
+
+@media (min-width: 425px) and (max-width: 549px) { /* mobile */
+  .artistImg {
+    width: 200px;
+    height: 200px;
+  }
+
+/* Home page */
+  li {
+    font-size: 14px;
+  }
+  .navbarList {
+    gap: 5px;
+  }
+  .navbar {
+    height: 44px;
+  }
+  .btn {
+    background-color: #000;
+    height: 90px;
+  }
+  .logo {
+    width: 109px;
+    height: 90px;
+  }
+
+  .hero-video {
+    width: 406px;
+    height: 100%;
+}
+.textDiv h2 {
+  font-size: 25px;
+  line-height: 25px;
+  letter-spacing: 2px;
+}
+.textDiv h4 {
+  font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+.heroBtn {
+  margin: 11px auto;
+  padding: 14px 16px;
+}
+  
+    .serviceBody {
+      display: flex;
+      flex-direction: column-reverse;
+  }
+  .serviceBodyLeft {
+    max-width: 85%;
+    display: flex;
+    padding: 14px 0 0 0;
+  }
+  
+  .serviceBodyRight {
+    width: 89%;
+  }
+  
+  .serviceBodyLeftTitle {
+    font-size: 25px;
+    letter-spacing: 3px;
+    min-width: 250px;
+  }
+  .textBox {
+    /* height: 300px; */
+    width: 300px;
+  }
+  
+  .smallTattoo {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .smallTattooRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 28px;
+  }
+
+/* Dream Price */
+.offerTitles {
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+.smallTattooImg {
+  object-fit: contain;
+  width: 95%;
+  height: 95%;
+}
+
+
+.bestworkImg {
+  object-fit: fill;
+}
+
+.bestworkGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 17px;
+  justify-items: center;
+}
+.footer__logo-text {
+  font-size: 2rem;
+}
+
+}
+
+
+@media (min-width: 375px) and (max-width: 424px) { /* mobile */
+  .artistImg {
+    width: 500px;
+    height: 500px;
+  }
+
+/* Home page */
+  li {
+    font-size: 14px;
+  }
+  .navbarList {
+    gap: 5px;
+  }
+  .navbar {
+    height: 44px;
+  }
+  .btn {
+    background-color: #000;
+    height: 90px;
+  }
+  .logo {
+    width: 109px;
+    height: 90px;
+  }
+
+  .hero-video {
+    width: 368px;
+    height: 100%;
+}
+.textDiv h2 {
+  font-size: 28px;
+  line-height: 28px;
+  letter-spacing: 2px;
+}
+.textDiv h4 {
+  font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+
+.heroBtn {
+  margin: 11px auto;
+  padding: 14px 16px;
+}
+  
+    .serviceBody {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+  }
+  .serviceBodyLeft {
+    max-width: 85%;
+    display: flex;
+    padding: 14px 0 0 0;
+  }
+ 
+  .serviceBodyRight {
+    width: 89%;
+  }
+  
+  .serviceBodyLeftTitle {
+    font-size: 25px;
+    letter-spacing: 3px;
+    min-width: 250px;
+  }
+  .textBox {
+    /* height: 300px; */
+    width: 300px;
+  }
+  
+  .smallTattoo {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .smallTattooRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 28px;
+  }
+
+/* Dream Price */
+.offerTitles {
+  font-size: 21px;
+  letter-spacing: 1px;
+}
+.smallTattooImg {
+  object-fit: contain;
+  width: 95%;
+  height: 95%;
+}
+
+
+.bestworkImg {
+  object-fit: fill;
+}
+
+.bestworkGrid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 17px;
+  justify-items: center;
+}
+.footer__logo-text {
+  font-size: 2rem;
+}
+
+
+.container {
+  margin: auto 2rem;
+  padding: 2px;
+}
+
+.serviceBtn {
+  padding: 13px 12px;
+  font-size: 11px;
+  margin: 2px 0;
+}
+
+
+
+
+}
+
+
+
+
+@media (min-width: 690px) and (max-width: 990px)  {
+  .bestworkGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 17px;
+    justify-items: center;
+  }
+ }
+
+
+@media (min-width: 990px) and (max-width: 1024px)  {
+  .bestworkGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 17px;
+    justify-items: center;
+  }
+ }
+
+ @media (max-width: 768px) {
+  .artistImg {
+    width: 300px;
+    height: 300px;
+  }
 }
