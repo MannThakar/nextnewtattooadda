@@ -176,7 +176,7 @@ export const INDIVIDUAL_CAROUSEL_DATA = [
         id: 1,
         question: "What is the offer?",
         answer:
-          "Celebrate your special day with us! Enjoy a 15% off on all services and products at Aliens Tattoo during your birthday month, because you deserve something extra on your big day! Your discount covers all tattoo services and products, with savings capped at ₹3500. It’s our birthday gift to you!",
+          "Celebrate your special day with us! Enjoy a 15% off on all services and products at Tattoo Adda during your birthday month, because you deserve something extra on your big day! Your discount covers all tattoo services and products, with savings capped at ₹3500. It’s our birthday gift to you!",
       },
       {
         id: 2,
@@ -188,7 +188,7 @@ export const INDIVIDUAL_CAROUSEL_DATA = [
         id: 3,
         question: "Location",
         answer:
-          "Celebrate at any of our Aliens Tattoo Studios. We’re ready to ink your birthday story wherever you are!",
+          "Celebrate at any of our Tattoo Adda Studios. We’re ready to ink your birthday story wherever you are!",
       },
       {
         id: 4,
@@ -234,7 +234,7 @@ export const INDIVIDUAL_CAROUSEL_DATA = [
         id: 1,
         question: "Location",
         answer:
-          "Celebrate at any of our Aliens Tattoo Studios. We’re here to mark your love story wherever you are!",
+          "Celebrate at any of our Tattoo Adda Studios. We’re here to mark your love story wherever you are!",
       },
       {
         id: 2,
@@ -275,7 +275,7 @@ export const INDIVIDUAL_CAROUSEL_DATA = [
         id: 8,
         question: "Our Promise to You",
         answer:
-          "Aliens Tattoo may tweak or end this offer anytime without a heads-up. Our decisions are final, but trust us—we’re here to make sure you have a stellar experience.",
+          "Tattoo Adda may tweak or end this offer anytime without a heads-up. Our decisions are final, but trust us—we’re here to make sure you have a stellar experience.",
       },
     ],
   },
@@ -294,7 +294,7 @@ export const INDIVIDUAL_CAROUSEL_DATA = [
         id: 1,
         question: "What is the offer?",
         answer:
-          "Celebrate your special day with us! Enjoy a 15% off on all services and products at Aliens Tattoo during your birthday month, because you deserve something extra on your big day! Your discount covers all tattoo services and products, with savings capped at ₹3500. It’s our birthday gift to you!",
+          "Celebrate your special day with us! Enjoy a 15% off on all services and products at Tattoo Adda during your birthday month, because you deserve something extra on your big day! Your discount covers all tattoo services and products, with savings capped at ₹3500. It’s our birthday gift to you!",
       },
       {
         id: 2,
@@ -306,7 +306,7 @@ export const INDIVIDUAL_CAROUSEL_DATA = [
         id: 3,
         question: "Location",
         answer:
-          "Celebrate at any of our Aliens Tattoo Studios. We’re ready to ink your birthday story wherever you are!",
+          "Celebrate at any of our Tattoo Adda Studios. We’re ready to ink your birthday story wherever you are!",
       },
       {
         id: 4,
@@ -352,7 +352,7 @@ export const INDIVIDUAL_CAROUSEL_DATA = [
         id: 1,
         question: "What is the offer?",
         answer:
-          "Celebrate your special day with us! Enjoy a 15% off on all services and products at Aliens Tattoo during your birthday month, because you deserve something extra on your big day! Your discount covers all tattoo services and products, with savings capped at ₹3500. It’s our birthday gift to you!",
+          "Celebrate your special day with us! Enjoy a 15% off on all services and products at Tattoo Adda during your birthday month, because you deserve something extra on your big day! Your discount covers all tattoo services and products, with savings capped at ₹3500. It’s our birthday gift to you!",
       },
       {
         id: 2,
@@ -364,7 +364,7 @@ export const INDIVIDUAL_CAROUSEL_DATA = [
         id: 3,
         question: "Location",
         answer:
-          "Celebrate at any of our Aliens Tattoo Studios. We’re ready to ink your birthday story wherever you are!",
+          "Celebrate at any of our Tattoo Adda Studios. We’re ready to ink your birthday story wherever you are!",
       },
       {
         id: 4,
