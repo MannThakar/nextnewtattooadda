@@ -22,7 +22,9 @@ const Navbar = () => {
           />
         </div>
         <div className="ctnbtn">
-          <button className="btn">Get in Touch</button>
+          <Link href={"https://wa.link/2c1gtv"}>
+            <button className="btn">Get in Touch</button>
+          </Link>
         </div>
       </div>
 
