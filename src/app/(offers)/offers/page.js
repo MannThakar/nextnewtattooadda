@@ -1,6 +1,7 @@
 import React from "react";
 
 import Image from "next/image";
+import Link from "next/link";
 const Offers = () => {
   return (
     <div id="work">
@@ -27,7 +28,9 @@ const Offers = () => {
                 confidently with Inkbox, the ultimate self-expression accessory!
               </p>
               <h2>Offer Price Rs 499/-</h2>
-              <button className="smallTattooRightBtn">Get offer now</button>
+              <Link href="https://wa.link/2c1gtv">
+                <button className="smallTattooRightBtn">Get offer now</button>
+              </Link>
             </div>
           </div>
         </div>
@@ -49,7 +52,9 @@ const Offers = () => {
                 confidently with Inkbox, the ultimate self-expression accessory!
               </p>
               <h2>Offer Price Rs 10,XXX/-</h2>
-              <button className="smallTattooRightBtn">Get offer now</button>
+              <Link href="https://wa.link/2c1gtv">
+                <button className="smallTattooRightBtn">Get offer now</button>
+              </Link>
             </div>
           </div>
         </div>

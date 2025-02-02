@@ -10,11 +10,12 @@
   },
   "dependencies": {
     "embla-carousel": "^8.5.2",
-    "lucide-react": "^0.471.0",
+    "lucide-react": "^0.471.2",
     "next": "15.1.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-multi-carousel": "^2.8.5"
+    "react-multi-carousel": "^2.8.5",
+    "react-slick": "^0.30.3"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

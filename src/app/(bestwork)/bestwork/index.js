@@ -1,7 +1,6 @@
 "use client";
 
 import { BESTWORK_IMAGES } from "@/utils/constant";
-import "react-multi-carousel/lib/styles.css";
 import Image from "next/image";
 
 const Bestwork = () => {
@@ -22,9 +21,6 @@ const Bestwork = () => {
               height={300}
             />
           ))}
-        </div>
-        <div className="bestworkBtnDiv">
-          <button className="bestworkBtn">See more</button>
         </div>
       </div>
     </div>

@@ -6,6 +6,8 @@ import Artist from "./(artist)/artist/page";
 import FAQ from "./(faq)/faq/page";
 import Bestwork from "./(bestwork)/bestwork";
 
+import Reward from "./(reward)/reward/page";
+
 const Page = () => {
   return (
     <div>
@@ -14,6 +16,7 @@ const Page = () => {
       <Offers />
       <Bestwork />
       <Artist />
+      <Reward />
       <FAQ />
     </div>
   );
