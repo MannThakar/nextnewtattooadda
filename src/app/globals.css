@@ -163,7 +163,7 @@ a {
   text-decoration: none;
   color: black;
 }
-a:hover {
+.navbar a:hover {
   color: black;
   border-bottom: 3px solid #fcc737;
   padding-bottom: 2px;
@@ -725,4 +725,434 @@ a:hover {
 }
 .individualArtistAd {
   margin-bottom: 100px;
+}
+
+/*Carousel*/
+
+.carouselCard {
+  border-radius: 20px;
+  height: 450px;
+  margin-left: 20px;
+}
+
+.carouselCardTitle {
+  padding: 18px 30px;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "Roboto Mono", monospace;
+}
+.carouselCardHeader {
+  margin: 0px 30px;
+  font-weight: 600;
+  font-size: 24px;
+  font-weight: bold;
+}
+.carouselCardSubHeader {
+  margin: 5px 30px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.rewardBox {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.reward {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+}
+.RewardTitle {
+  font-family: "Bebas Neue", serif;
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+.RewardTitleSpan {
+  font-family: "Bebas Neue", serif;
+  mix-blend-mode: screen; /* Try a different blend mode */
+  color: #1e40af; /* Use contrasting colors */
+  text-shadow: 5px 5px 0px #ddd;
+}
+.rewardText {
+  background-color: white;
+  height: fit-content;
+  width: 40%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rewardTitle {
+  font-size: 40px;
+  font-weight: bold;
+  padding: 30px 40px;
+}
+
+.rewardSubTitle {
+  font-size: 20px;
+  font-weight: 500;
+  color: #3333339f;
+  padding: 0 40px;
+}
+
+.rewardBtnDiv {
+  width: 100%;
+  display: flex;
+  padding-left: 40px;
+  margin-top: 30px;
+}
+
+.rewardBtn {
+  background-color: #000;
+  padding: 15px 50px;
+  color: white;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.rewardAccordion {
+  margin-top: 100px;
+}
+
+.rewardAccordionTitle {
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Bebas Neue", serif;
+  text-shadow: 5px 5px 0px #ddd;
+}
+
+/* Custom Accordion */
+.accordion-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.accordion-item {
+  margin-bottom: 8px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion-button {
+  width: 100%;
+  padding: 16px;
+  text-align: left;
+  background: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-size: 18px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-button:hover {
+  background-color: #f5f5f5;
+}
+
+.accordion-button:focus {
+  outline: none;
+  background-color: #f5f5f5;
+}
+
+.accordion-arrow {
+  transition: transform 0.3s ease;
+}
+
+.accordion-arrow.active {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background-color: #f9f9f9;
+}
+
+.accordion-content.active {
+  max-height: 300px; /* Adjust based on your needs */
+}
+
+.accordion-content-inner {
+  padding: 16px;
+}
+
+@media (max-width: 768px) {
+  .accordion-container {
+    padding: 10px;
+  }
+
+  .accordion-button {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .accordion-content-inner {
+    padding: 12px;
+  }
+}
+
+.customCarouselWorkImg {
+  width: 500px;
+  height: 500px;
+  margin-left: 10px;
+}
+
+/* styles/globals.css */
+
+.payLater {
+  font-family: "Bebas Neue", serif;
+  font-size: 50px;
+}
+.payLaterBox {
+  margin: 100px 0;
+}
+
+/* Consultation Banner Styles */
+.consultation-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f3f4f6;
+  padding: 4rem;
+  width: 100%;
+  margin: 100px 0;
+}
+
+.banner-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  max-width: 36rem;
+  line-height: 1.2;
+}
+
+.expert-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.expert-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.booking-options {
+  display: flex;
+  gap: 1rem;
+}
+
+.booking-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: #000;
+  transition: color 0.2s ease;
+}
+
+.booking-link:hover {
+  color: #4b5563;
+}
+
+.booking-link.whatsapp {
+  color: #10b981;
+}
+
+.booking-link.whatsapp:hover {
+  color: #059669;
+}
+
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .consultation-banner {
+    flex-direction: column;
+    padding: 2rem;
+    align-items: flex-start;
+  }
+
+  .banner-heading {
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .booking-options {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-heading {
+    font-size: 2rem;
+  }
+
+  .expert-title {
+    font-size: 1.25rem;
+  }
+}
+.rewardCarousel h2 {
+  font-family: "Bebas Neue", serif;
+  font-size: 50px;
+  margin-top: 60px;
+}
+
+/* styles/globals.css */
+.calculator-container {
+  display: flex;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin: 2rem auto;
+  gap: 4rem;
+  border: 1px solid #ccc;
+}
+
+.calculator-left {
+  flex: 1;
+  padding: 2rem;
+}
+
+.calculator-left h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 300;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.calculator-right {
+  flex: 1;
+  padding: 2rem;
+}
+
+.input-group {
+  margin-bottom: 2rem;
+}
+
+.input-group label {
+  display: block;
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.price-input {
+  position: relative;
+  width: 100%;
+}
+
+.price-input input {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1.25rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding-right: 2rem;
+}
+
+.price-input .currency {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tenure-slider {
+  padding: 1rem 0;
+}
+
+.tenure-slider input[type="range"] {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.tenure-marks {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.tenure-marks span {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 24px;
+  color: #666;
+}
+
+.result {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Custom range input styling */
+input[type="range"] {
+  -webkit-appearance: none;
+  height: 4px;
+  background: #ddd;
+  border-radius: 2px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #333;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #333;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .calculator-container {
+    flex-direction: column;
+    gap: 2rem;
+    margin: 1rem;
+  }
+
+  .calculator-left h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .calculator-right {
+    padding: 1rem;
+  }
 }

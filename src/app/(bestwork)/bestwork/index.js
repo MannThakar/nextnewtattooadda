@@ -22,9 +22,6 @@ const Bestwork = () => {
             />
           ))}
         </div>
-        <div className="bestworkBtnDiv">
-          <button className="bestworkBtn">See more</button>
-        </div>
       </div>
     </div>
   );

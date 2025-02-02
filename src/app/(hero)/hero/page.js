@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const HeroSection = () => {
   return (
     <>
@@ -17,7 +19,9 @@ const HeroSection = () => {
             <h4>Safe, clean, and creative tattooing services.</h4>
           </div>
           <div className="btnDiv">
-            <button className="heroBtn">Book Appointment</button>
+            <Link href="https://wa.link/2c1gtv">
+              <button className="heroBtn">Book Appointment</button>
+            </Link>
           </div>
         </div>
       </div>
