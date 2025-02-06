@@ -1082,3 +1082,106 @@ li {
     height: 300px;
   }
 }
+
+
+
+@media (min-width: 1450px) { /* XXLarger devices */ 
+  .logo {
+    width: 170px;
+    height: 170px;
+}
+.btn {
+  background-color: #000;
+  height: 170px;
+  width: 206px;
+  font-size: 20px;
+}
+.navbar {
+  height: 61px;
+}
+.navbarList {
+  gap: 56px;
+  margin-left: 83px;
+}
+li {
+  font-size: 21px;
+}
+.textDiv h2 {
+  font-size: 56px;
+}
+.textDiv h4 {
+  font-size: 24px;
+}
+.heroBtn {
+  padding: 23px 30px;
+  font-size: 18px;
+}
+.serviceBodyLeftTitle {
+  font-size: 63px;
+}
+.serviceBodyLeftPara {
+  font-size: 26px;
+  line-height: 32px;
+  width: 87%;
+}
+.serviceBtn {
+  padding: 23px 30px;
+  font-size: 18px;
+}
+.offerTitles {
+  font-size: 56px;
+  margin-top: 9px;
+}
+.smallTattooRightText h4 {
+  font-size: 30px;
+}
+
+.smallTattooRightText p {
+  font-size: 21px;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+.smallTattooRightBtn {
+  font-size: 19px;
+  padding: 18px 30px;
+  width: fit-content;
+}
+
+.bestworkImg {
+  object-fit: cover;
+  height: 97%;
+  width: 93%;
+}
+
+.bestworkBtn {
+  padding: 20px 40px;
+  font-size: 20px;
+}
+.faq-question {
+  font-size: 1.75em;
+}
+.faq-answer p {
+  font-size: 25px;
+}
+.footer__social-link {
+  font-size: 1.95rem;
+}
+.footer__slogan {
+  font-size: 1.75rem;
+}
+.footer__links {
+  font-size: 1.75rem;
+}
+.footer__copyright {
+  font-size: 1.75rem;
+}
+.footer__logo-text {
+  font-size: 7rem;
+}
+.footer__container {
+  max-width: 87%;
+}
+.footer__map {
+  height: 450px;
+}
+}
