@@ -32,22 +32,21 @@ const Artists = () => {
       <h2 className="offerTitles container">
         Meet the Masters <span className="offerSpan"> Behind the Ink</span>
       </h2>
-      <div className="slider-container">
-        <Carousel responsive={responsive}>
-          {ARTIST_DATA?.map((profile, index) => (
-            <Link key={index} href={`/artist/${profile.id}`}>
-              <Image
-                key={index}
-                src={profile.profilePic}
-                alt="artist"
-                className="artistImg"
-                width={500}
-                height={500}
-              />
-            </Link>
-          ))}
-        </Carousel>
-      </div>
+      <Carousel responsive={responsive}>
+        {ARTIST_DATA?.map((profile, index) => (
+          <Link key={index} href={`/artist/${profile.id}`}>
+            <Image
+              key={index}
+              src={profile.profilePic}
+              alt="artist"
+              className="artistImg"
+              // Remove this props to make image responsive
+              width={400}
+              height={300}
+            />
+          </Link>
+        ))}
+      </Carousel>
     </div>
   );
 };

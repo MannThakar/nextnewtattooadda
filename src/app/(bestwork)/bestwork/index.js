@@ -17,7 +17,7 @@ const Bestwork = () => {
               src={profile}
               alt="artist"
               className="bestworkImg"
-              width={300}
+              width={200}
               height={300}
             />
           ))}
