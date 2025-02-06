@@ -7,16 +7,20 @@ import FAQ from "./(faq)/faq/page";
 import Bestwork from "./(bestwork)/bestwork";
 
 import Reward from "./(reward)/reward/page";
+import TiltedCard from "@/blocks/Components/TiltedCard/TiltedCard";
 
 const Page = () => {
   return (
     <div>
       <HeroSection />
+
       <Service />
+
       <Offers />
       <Bestwork />
       <Artist />
       <Reward />
+
       <FAQ />
     </div>
   );
