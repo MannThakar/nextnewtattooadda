@@ -10,7 +10,7 @@ const Reward = () => {
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
+      breakpoint: { max: 4000, min: 1000 },
       items: 5,
     },
     desktop: {
@@ -31,7 +31,8 @@ const Reward = () => {
       <h2 className="RewardTitle container">
         TattooAdda <span className="RewardTitleSpan">Rewards</span>
       </h2>
-      <Carousel responsive={responsive} infinite autoPlay draggable swipeable>
+
+      <Carousel responsive={responsive} infinite draggable swipeable>
         {CAROUSEL_DATA?.map((profile, index) => (
           <Link href={`/reward/${profile?.id}`} key={index}>
             <CarouselCard
