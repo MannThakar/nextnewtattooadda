@@ -15,8 +15,8 @@
     "lucide-react": "^0.471.2",
     "next": "15.1.4",
     "ogl": "^1.0.11",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-multi-carousel": "^2.8.5",
     "react-slick": "^0.30.3"
   },
