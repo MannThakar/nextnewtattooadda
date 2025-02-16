@@ -2,11 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Nerko+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Roboto", serif;
   font-optical-sizing: auto;
 }
 :root {
@@ -149,7 +150,7 @@
   margin-left: 50px;
 }
 
-li {
+.navbar li {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -165,7 +166,7 @@ a {
 }
 .navbar a:hover {
   color: black;
-  border-bottom: 3px solid #fcc737;
+  border-bottom: 3px solid #1e40af;
   padding-bottom: 2px;
   width: fit-content;
 }
@@ -187,16 +188,23 @@ a {
 
 .textDiv h2 {
   /* font-family: "Playfair Display", serif; */
+  font-family: "Roboto", serif;
+
+  font-weight: bolder;
+}
+
+.animatedText {
   font-family: "Bebas Neue", serif;
   font-weight: 400;
-  font-size: 52px;
-  line-height: 60px;
+  font-size: 36px;
+
   letter-spacing: 5px;
   font-weight: bolder;
 }
+
 .heroSpan {
-  font-family: "Bebas Neue", serif;
-  mix-blend-mode: screen; /* Try a different blend mode */
+  font-size: 36px;
+  font-weight: 900;
   color: #1e40af; /* Use contrasting colors */
   text-shadow: 6px 6px var(--shadow), 3px 3px var(--shadow);
 }
@@ -217,7 +225,7 @@ a {
   width: 100%;
 }
 
-.hero-video {
+.heroVideo {
   width: 100%; /* Full width */
   height: 40%; /* Full height */
 }
@@ -230,7 +238,7 @@ a {
 .heroBtn {
   margin: 20px auto;
   background-color: #1e40af;
-  padding: 15px 30px;
+  padding: 15px 10px;
   color: white;
   border: none;
   font-weight: 600;
@@ -308,7 +316,7 @@ a {
 }
 
 .serviceBtn:hover {
-  border: 3px solid #fcc737;
+  outline: 3px solid #000;
   box-sizing: border-box;
 }
 
@@ -396,6 +404,7 @@ a {
   width: 100%;
   overflow: hidden;
   position: relative;
+  margin: auto;
 }
 
 .slider {
@@ -413,19 +422,9 @@ a {
   transform: scale(1.05);
 }
 
-.artistImg {
-  object-fit: cover;
-  border-radius: 12px;
-}
-
 @media (max-width: 768px) {
   .slide {
     flex: 0 0 200px;
-  }
-
-  .artistImg {
-    width: 200px;
-    height: 200px;
   }
 }
 /*Best Work Section*/
@@ -582,7 +581,8 @@ a {
 .footer__social-links {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 80px;
+  justify-content: flex-start;
   margin-bottom: 2rem;
 }
 
@@ -602,13 +602,13 @@ a {
 .footer__divider {
   border: none;
   border-top: 1px solid var(--footer-border-color);
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 .footer__content {
   display: flex;
   flex-direction: column;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 
 .footer__slogan {
@@ -1515,46 +1515,21 @@ input[type="range"]::-moz-range-thumb {
 
 @media (min-width: 1450px) {
   /* XXLarger devices */
-  .logo {
-    width: 170px;
-    height: 170px;
-  }
-  .btn {
-    background-color: #000;
-    height: 170px;
-    width: 206px;
-    font-size: 20px;
-  }
-  .navbar {
-    height: 61px;
-  }
-  .navbarList {
-    gap: 56px;
-    margin-left: 83px;
-  }
-  li {
-    font-size: 21px;
-  }
-  .textDiv h2 {
-    font-size: 48px;
-  }
-  .textDiv h4 {
-    font-size: 24px;
-  }
+
   .heroBtn {
-    padding: 23px 30px;
+    padding: 18px 30px;
     font-size: 18px;
   }
   .serviceBodyLeftTitle {
-    font-size: 63px;
+    font-size: 40px;
   }
   .serviceBodyLeftPara {
-    font-size: 26px;
+    font-size: 16px;
     line-height: 32px;
     width: 87%;
   }
   .serviceBtn {
-    padding: 23px 30px;
+    padding: 18px 30px;
     font-size: 18px;
   }
   .offerTitles {
@@ -1562,11 +1537,11 @@ input[type="range"]::-moz-range-thumb {
     margin-top: 9px;
   }
   .smallTattooRightText h4 {
-    font-size: 30px;
+    font-size: 24px;
   }
 
   .smallTattooRightText p {
-    font-size: 21px;
+    font-size: 14px;
     letter-spacing: 1px;
     line-height: 30px;
   }
@@ -1587,31 +1562,29 @@ input[type="range"]::-moz-range-thumb {
     font-size: 20px;
   }
   .faq-question {
-    font-size: 1.75em;
+    font-size: 1em;
   }
   .faq-answer p {
     font-size: 25px;
   }
   .footer__social-link {
-    font-size: 1.95rem;
+    font-size: 1rem;
   }
   .footer__slogan {
-    font-size: 1.75rem;
+    font-size: 1rem;
   }
   .footer__links {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
   }
   .footer__copyright {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
   }
   .footer__logo-text {
-    font-size: 7rem;
+    font-size: 4rem;
   }
-  .footer__container {
-    max-width: 87%;
-  }
+
   .footer__map {
-    height: 450px;
+    height: 300px;
   }
 }
 
@@ -2071,4 +2044,15 @@ input[type="range"]::-moz-range-thumb {
   .footer__map {
     height: 450px;
   }
+}
+
+/* Common components */
+
+.backButtonContainer {
+  border-bottom: 1px solid black;
+  padding: 10px;
+}
+.chevronLeft {
+  margin-left: 20px;
+  cursor: pointer;
 }

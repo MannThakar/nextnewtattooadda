@@ -10,11 +10,11 @@ import Link from "next/link";
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 5,
+    breakpoint: { max: 4000, min: 2400 },
+    items: 4,
   },
   desktop: {
-    breakpoint: { max: 3000, min: 1024 },
+    breakpoint: { max: 2400, min: 1024 },
     items: 3,
   },
   tablet: {
@@ -28,25 +28,26 @@ const responsive = {
 };
 const Artists = () => {
   return (
-    <div id="artist" className="artist ">
+    <div id="artist" className="artist">
       <h2 className="offerTitles container">
         Meet the Masters <span className="offerSpan"> Behind the Ink</span>
       </h2>
-      <Carousel responsive={responsive}>
-        {ARTIST_DATA?.map((profile, index) => (
-          <Link key={index} href={`/artist/${profile.id}`}>
-            <Image
-              key={index}
-              src={profile.profilePic}
-              alt="artist"
-              className="artistImg"
-              // Remove this props to make image responsive
-              width={400}
-              height={300}
-            />
-          </Link>
-        ))}
-      </Carousel>
+      <div className="container">
+        <Carousel responsive={responsive}>
+          {ARTIST_DATA?.map((profile, index) => (
+            <Link key={index} href={`/artist/${profile.id}`}>
+              <Image
+                key={index}
+                src={profile.profilePic}
+                alt="artist"
+                className="artistImg"
+                width={450}
+                height={450}
+              />
+            </Link>
+          ))}
+        </Carousel>
+      </div>
     </div>
   );
 };

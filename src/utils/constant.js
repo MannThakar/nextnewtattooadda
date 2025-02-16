@@ -42,6 +42,12 @@ export const ARTIST_IMAGES = [
     photo: "/Artist/milan.png",
     description: "LineArt Specialist",
   },
+  {
+    id: 4,
+    name: "Parth",
+    photo: "/Artist/parth.png",
+    description: "Art School Artist",
+  },
 ];
 
 export const FAQ_DATA = [
@@ -123,6 +129,12 @@ export const ARTIST_DATA = [
     ],
     profileDescription:
       "Milan, our skilled LineArt Specialist, has mastered the beauty of simplicity through bold and precise lines. With a keen eye for clean designs and intricate patterns, Milan transforms minimalist ideas into striking tattoos that speak volumes. Whether it’s geometric art, abstract concepts, or delicate linework, Milan’s steady hand and artistic vision ensure every piece is both elegant and unforgettable. Their passion for precision and creativity makes them the go-to artist for those seeking timeless and sophisticated ink.",
+  },
+  {
+    id: 4,
+    name: "Parth",
+    description: "Art School Artist",
+    profilePic: "/Artist/parth.png",
   },
 ];
 

@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import TiltedCard from "@/blocks/Components/TiltedCard/TiltedCard";
 
 const Service = () => {
   return (
@@ -25,13 +26,7 @@ const Service = () => {
               </div>
             </div>
             <div className="serviceBodyRight ">
-              <Image
-                src="/Service/02_Service.jpeg"
-                alt="service"
-                className="serviceImg"
-                width={500}
-                height={500}
-              />
+              <TiltedCard imageSrc="/Service/02_Service.jpeg" />
             </div>
           </div>
         </div>

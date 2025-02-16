@@ -1,3 +1,4 @@
+import BlurText from "@/blocks/TextAnimations/BlurText/BlurText";
 import Link from "next/link";
 
 const HeroSection = () => {
@@ -5,19 +6,38 @@ const HeroSection = () => {
     <>
       <div className="container" id="home">
         <div className="mainDiv">
-          <video preload="none" className="hero-video" autoPlay muted loop>
+          <video preload="none" className="heroVideo" autoPlay muted loop>
             <source src="/Hero/BannerVideo.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
         <div className="heroContainer">
-          <div className="textDiv">
-            <h2>
-              Crafting Masterpieces With
-              <span className="heroSpan"> Tatto Adda</span>
-            </h2>
-            <h4>Safe, clean, and creative tattooing services.</h4>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              marginTop: "40px",
+            }}
+          >
+            <BlurText
+              text="Crafting Masterpieces With"
+              delay={200}
+              animateBy="words"
+              direction="top"
+              className="animatedText"
+            />
+            <BlurText
+              text=" Tattoo Adda"
+              delay={200}
+              animateBy="words"
+              direction="top"
+              className="heroSpan"
+            />
           </div>
+          <h4 style={{ marginTop: "10px", textAlign: "center" }}>
+            Safe, clean, and creative tattooing services.
+          </h4>
+
           <div className="btnDiv">
             <Link href="https://wa.link/2c1gtv">
               <button className="heroBtn">Book Appointment</button>
