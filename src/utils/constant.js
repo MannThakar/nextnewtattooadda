@@ -135,6 +135,18 @@ export const ARTIST_DATA = [
     name: "Parth",
     description: "Art School Artist",
     profilePic: "/Artist/parth.png",
+    photo: [
+      "/IndividualArtist/Hemal/01_Hemal.jpg",
+      "/IndividualArtist/Hemal/02_Hemal.jpg",
+      "/IndividualArtist/Milan/01_Milan.jpg",
+      "/IndividualArtist/Milan/02_Milan.jpg",
+      "/IndividualArtist/Hemal/04_Hemal.jpg",
+      "/IndividualArtist/Hemal/05_Hemal.jpg",
+      "/IndividualArtist/Jay/07_Jay.jpg",
+      "/IndividualArtist/Jay/08_Jay.jpg",
+    ],
+    profileDescription:
+      "With a background in fine arts and a passion for ink, Parth is not just a tattoo artist—he’s a storyteller on skin. Trained in traditional art schools, his mastery of shading, intricate detailing, and realism sets him apart. Whether it’s a hyper-realistic portrait, abstract design, or neo-traditional piece, Parth brings artistic precision and creativity to every tattoo.",
   },
 ];
 
