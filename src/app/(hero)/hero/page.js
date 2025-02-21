@@ -18,6 +18,7 @@ const HeroSection = () => {
               justifyContent: "center",
               marginTop: "40px",
             }}
+            className="heroText"
           >
             <BlurText
               text="Crafting Masterpieces With"

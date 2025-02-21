@@ -427,7 +427,12 @@ a {
     flex: 0 0 200px;
   }
 }
+
+.heroText {
+  flex-direction: column;
+}
 /*Best Work Section*/
+
 .bestwork {
   margin-top: 120px;
 }
@@ -1198,6 +1203,7 @@ input[type="range"]::-moz-range-thumb {
     display: flex;
     flex-direction: column;
     padding: 14px 0 0 0;
+    width: 100%;
   }
 
   .serviceBodyRight {
@@ -1431,6 +1437,7 @@ input[type="range"]::-moz-range-thumb {
 
 @media (min-width: 425px) and (max-width: 549px) {
   /* mobile */
+
   .artistImg {
     width: 200px;
     height: 200px;
@@ -1441,11 +1448,14 @@ input[type="range"]::-moz-range-thumb {
     font-size: 14px;
   }
   .navbarList {
-    gap: 5px;
+    gap: 30px;
     padding-top: 6px;
+    margin: 0px;
+    margin-top: 5px;
+    overflow: scroll;
   }
   .navbar {
-    height: 44px;
+    height: 60px;
   }
   .btn {
     background-color: #000;
@@ -1485,6 +1495,7 @@ input[type="range"]::-moz-range-thumb {
     max-width: 85%;
     display: flex;
     padding: 14px 0 0 0;
+    width: 100%;
   }
 
   .serviceBodyRight {
