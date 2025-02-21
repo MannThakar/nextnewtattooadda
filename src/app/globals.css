@@ -1140,6 +1140,411 @@ input[type="range"]::-moz-range-thumb {
   border: none;
 }
 
+@media (min-width: 375px) and (max-width: 424px) {
+  /* mobile */
+  .artistImg {
+    width: 500px;
+    height: 500px;
+  }
+
+  /* Home page */
+  li {
+    font-size: 14px;
+  }
+  .navbarList {
+    gap: 5px;
+    margin-top: 5px;
+  }
+  .navbar {
+    height: 44px;
+  }
+  .btn {
+    background-color: #000;
+    height: 75px;
+  }
+  .logo {
+    width: 90px;
+    height: 75px;
+  }
+
+  .hero-video {
+    width: 368px;
+    height: 100%;
+  }
+  .textDiv h2 {
+    font-size: 28px;
+    line-height: 28px;
+    letter-spacing: 2px;
+  }
+  .textDiv h4 {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+  }
+
+  .heroBtn {
+    margin: 11px auto;
+    padding: 14px 16px;
+  }
+
+  .serviceBody {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .serviceBodyLeft {
+    max-width: 85%;
+    display: flex;
+    flex-direction: column;
+    padding: 14px 0 0 0;
+  }
+
+  .serviceBodyRight {
+    width: 89%;
+  }
+
+  .serviceBodyLeftTitle {
+    font-size: 25px;
+    letter-spacing: 3px;
+    min-width: 250px;
+  }
+  .textBox {
+    /* height: 300px; */
+    width: 300px;
+  }
+
+  .smallTattoo {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .smallTattooRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 28px;
+  }
+
+  /* Dream Price */
+  .offerTitles {
+    font-size: 22px;
+    letter-spacing: 1px;
+  }
+  .smallTattooImg {
+    object-fit: contain;
+    width: 95%;
+    height: 95%;
+  }
+
+  .bestworkImg {
+    object-fit: fill;
+  }
+
+  .bestworkGrid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 17px;
+    justify-items: center;
+  }
+  .footer__logo-text {
+    font-size: 2rem;
+  }
+
+  .container {
+    margin: auto 1.25rem;
+    padding: 2px;
+  }
+
+  .serviceBtn {
+    padding: 13px 12px;
+    font-size: 11px;
+    margin: 7px 0;
+  }
+  .RewardTitle {
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+
+  .faq-container {
+    margin: 0 0 50px 0;
+  }
+  .footer__map {
+    height: 100%;
+  }
+  .rewardAccordion {
+    margin-top: 100px;
+  }
+  .rewardText {
+    width: 85%;
+    margin-top: 20px;
+  }
+  .rewardTitle {
+    font-size: 21px;
+    padding: 22px 34px;
+  }
+  .rewardSubTitle {
+    font-size: 17px;
+    padding: 0 34px;
+  }
+
+  .reward {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .rewardBtn {
+    padding: 15px 28px;
+  }
+  .rewardAccordionTitle {
+    font-size: 45px;
+  }
+  .payLater {
+    font-size: 45px;
+  }
+  .calculator-container {
+    margin: 0%;
+  }
+  .calculator-left {
+    padding: 0;
+  }
+  .calculator-right {
+    padding: 0;
+  }
+  .input-group {
+    margin-bottom: 1.25rem;
+  }
+
+  .individualArtist {
+    margin-top: 20px;
+    flex-direction: column;
+    /* gap: 60px; */
+    /* align-items: center; */
+  }
+  .individualArtistName {
+    font-size: 43px;
+    margin: 0;
+  }
+  .individualArtistTitle {
+    font-size: 30px;
+    margin-top: 53px;
+    justify-content: start;
+  }
+  .individualArtistLink {
+    margin-top: 0px;
+  }
+  .individualArtistBio {
+    width: 100%;
+    height: 10vh;
+  }
+  .individualArtistImg {
+    width: 280px;
+    height: 280px;
+  }
+  .individualArtistDescription {
+    font-size: 15px;
+  }
+  .individualArtistBestWork {
+    margin-top: 389px;
+  }
+  .individualArtistAd {
+    gap: 11px;
+  }
+}
+@media (min-width: 425px) and (max-width: 768px) {
+  .rewardAccordion {
+    margin-top: 100px;
+  }
+  .rewardText {
+    width: 85%;
+    margin-top: 20px;
+  }
+  .rewardTitle {
+    font-size: 21px;
+    padding: 22px 34px;
+  }
+  .rewardSubTitle {
+    font-size: 17px;
+    padding: 0 34px;
+  }
+
+  .reward {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .rewardBtn {
+    padding: 15px 28px;
+  }
+  .rewardAccordionTitle {
+    font-size: 45px;
+  }
+  .payLater {
+    font-size: 45px;
+  }
+  .calculator-container {
+    margin: 0%;
+  }
+  .calculator-left {
+    padding: 0;
+  }
+  .calculator-right {
+    padding: 0;
+  }
+  .input-group {
+    margin-bottom: 1.25rem;
+  }
+
+  .individualArtist {
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .individualArtistName {
+    font-size: 46px;
+    margin: 0;
+  }
+  .individualArtistTitle {
+    font-size: 33px;
+    margin-top: 53px;
+    justify-self: start;
+  }
+  .individualArtistLink {
+    margin-top: 0px;
+  }
+  .individualArtistBio {
+    width: 100%;
+    height: 10vh;
+  }
+  .individualArtistImg {
+    width: 290px;
+    height: 290px;
+  }
+  .individualArtistDescription {
+    font-size: 16px;
+  }
+  .individualArtistBestWork {
+    margin-top: 350px;
+  }
+  .individualArtistAd {
+    gap: 11px;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 549px) {
+  /* mobile */
+  .artistImg {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* Home page */
+  li {
+    font-size: 14px;
+  }
+  .navbarList {
+    gap: 5px;
+    padding-top: 6px;
+  }
+  .navbar {
+    height: 44px;
+  }
+  .btn {
+    background-color: #000;
+    height: 90px;
+  }
+  .logo {
+    width: 109px;
+    height: 90px;
+  }
+
+  .hero-video {
+    width: 406px;
+    height: 100%;
+  }
+  .textDiv h2 {
+    font-size: 25px;
+    line-height: 25px;
+    letter-spacing: 2px;
+  }
+  .textDiv h4 {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+  }
+
+  .heroBtn {
+    margin: 11px auto;
+    padding: 14px 16px;
+  }
+
+  .serviceBody {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .serviceBodyLeft {
+    max-width: 85%;
+    display: flex;
+    padding: 14px 0 0 0;
+  }
+
+  .serviceBodyRight {
+    width: 89%;
+  }
+
+  .serviceBodyLeftTitle {
+    font-size: 25px;
+    letter-spacing: 3px;
+    min-width: 250px;
+  }
+  .textBox {
+    /* height: 300px; */
+    width: 300px;
+  }
+
+  .smallTattoo {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  .smallTattooRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 28px;
+  }
+
+  /* Dream Price */
+  .offerTitles {
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin-top: 23px;
+  }
+  .smallTattooImg {
+    object-fit: contain;
+    width: 95%;
+    height: 95%;
+  }
+
+  .bestworkImg {
+    object-fit: fill;
+  }
+
+  .bestworkGrid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 17px;
+    justify-items: center;
+  }
+  .footer__logo-text {
+    font-size: 2rem;
+  }
+
+  .container {
+    margin: auto 2rem;
+    padding: 2px;
+  }
+}
+
 @media (max-width: 768px) {
   .calculator-container {
     flex-direction: column;
@@ -1251,243 +1656,6 @@ input[type="range"]::-moz-range-thumb {
   }
 }
 
-@media (min-width: 425px) and (max-width: 549px) {
-  /* mobile */
-  .artistImg {
-    width: 200px;
-    height: 200px;
-  }
-
-  /* Home page */
-  li {
-    font-size: 14px;
-  }
-  .navbarList {
-    gap: 5px;
-    padding-top: 6px;
-  }
-  .navbar {
-    height: 44px;
-  }
-  .btn {
-    background-color: #000;
-    height: 90px;
-  }
-  .logo {
-    width: 109px;
-    height: 90px;
-  }
-
-  .hero-video {
-    width: 406px;
-    height: 100%;
-  }
-  .textDiv h2 {
-    font-size: 25px;
-    line-height: 25px;
-    letter-spacing: 2px;
-  }
-  .textDiv h4 {
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 1px;
-    margin-top: 5px;
-  }
-
-  .heroBtn {
-    margin: 11px auto;
-    padding: 14px 16px;
-  }
-
-  .serviceBody {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .serviceBodyLeft {
-    max-width: 85%;
-    display: flex;
-    padding: 14px 0 0 0;
-  }
-
-  .serviceBodyRight {
-    width: 89%;
-  }
-
-  .serviceBodyLeftTitle {
-    font-size: 25px;
-    letter-spacing: 3px;
-    min-width: 250px;
-  }
-  .textBox {
-    /* height: 300px; */
-    width: 300px;
-  }
-
-  .smallTattoo {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-  }
-  .smallTattooRight {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 28px;
-  }
-
-  /* Dream Price */
-  .offerTitles {
-    font-size: 40px;
-    letter-spacing: 2px;
-    margin-top: 23px;
-  }
-  .smallTattooImg {
-    object-fit: contain;
-    width: 95%;
-    height: 95%;
-  }
-
-  .bestworkImg {
-    object-fit: fill;
-  }
-
-  .bestworkGrid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 17px;
-    justify-items: center;
-  }
-  .footer__logo-text {
-    font-size: 2rem;
-  }
-
-  .container {
-    margin: auto 2rem;
-    padding: 2px;
-  }
-}
-
-@media (min-width: 375px) and (max-width: 424px) {
-  /* mobile */
-  .artistImg {
-    width: 500px;
-    height: 500px;
-  }
-
-  /* Home page */
-  li {
-    font-size: 14px;
-  }
-  .navbarList {
-    gap: 5px;
-  }
-  .navbar {
-    height: 44px;
-  }
-  .btn {
-    background-color: #000;
-    height: 90px;
-  }
-  .logo {
-    width: 109px;
-    height: 90px;
-  }
-
-  .hero-video {
-    width: 368px;
-    height: 100%;
-  }
-  .textDiv h2 {
-    font-size: 28px;
-    line-height: 28px;
-    letter-spacing: 2px;
-  }
-  .textDiv h4 {
-    font-size: 11px;
-    line-height: 16px;
-    letter-spacing: 1px;
-    margin-top: 5px;
-  }
-
-  .heroBtn {
-    margin: 11px auto;
-    padding: 14px 16px;
-  }
-
-  .serviceBody {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-  .serviceBodyLeft {
-    max-width: 85%;
-    display: flex;
-    padding: 14px 0 0 0;
-  }
-
-  .serviceBodyRight {
-    width: 89%;
-  }
-
-  .serviceBodyLeftTitle {
-    font-size: 25px;
-    letter-spacing: 3px;
-    min-width: 250px;
-  }
-  .textBox {
-    /* height: 300px; */
-    width: 300px;
-  }
-
-  .smallTattoo {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-  }
-  .smallTattooRight {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 28px;
-  }
-
-  /* Dream Price */
-  .offerTitles {
-    font-size: 21px;
-    letter-spacing: 1px;
-  }
-  .smallTattooImg {
-    object-fit: contain;
-    width: 95%;
-    height: 95%;
-  }
-
-  .bestworkImg {
-    object-fit: fill;
-  }
-
-  .bestworkGrid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 17px;
-    justify-items: center;
-  }
-  .footer__logo-text {
-    font-size: 2rem;
-  }
-
-  .container {
-    margin: auto 2rem;
-    padding: 2px;
-  }
-
-  .serviceBtn {
-    padding: 13px 12px;
-    font-size: 11px;
-    margin: 2px 0;
-  }
-}
-
 @media (min-width: 690px) and (max-width: 990px) {
   .bestworkGrid {
     display: grid;
@@ -1588,11 +1756,6 @@ input[type="range"]::-moz-range-thumb {
   }
 }
 
-.responsive-class {
-  font-size: 14px; /* Default for mobile */
-  padding: 10px;
-}
-
 @media (min-width: 550px) and (max-width: 1024px) {
   /* Tablets */
 
@@ -1682,243 +1845,6 @@ input[type="range"]::-moz-range-thumb {
   }
 }
 
-@media (min-width: 425px) and (max-width: 549px) {
-  /* mobile */
-  .artistImg {
-    width: 200px;
-    height: 200px;
-  }
-
-  /* Home page */
-  li {
-    font-size: 14px;
-  }
-  .navbarList {
-    gap: 5px;
-    padding-top: 6px;
-  }
-  .navbar {
-    height: 44px;
-  }
-  .btn {
-    background-color: #000;
-    height: 90px;
-  }
-  .logo {
-    width: 109px;
-    height: 90px;
-  }
-
-  .hero-video {
-    width: 406px;
-    height: 100%;
-  }
-  .textDiv h2 {
-    font-size: 25px;
-    line-height: 25px;
-    letter-spacing: 2px;
-  }
-  .textDiv h4 {
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 1px;
-    margin-top: 5px;
-  }
-
-  .heroBtn {
-    margin: 11px auto;
-    padding: 14px 16px;
-  }
-
-  .serviceBody {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .serviceBodyLeft {
-    max-width: 85%;
-    display: flex;
-    padding: 14px 0 0 0;
-  }
-
-  .serviceBodyRight {
-    width: 89%;
-  }
-
-  .serviceBodyLeftTitle {
-    font-size: 25px;
-    letter-spacing: 3px;
-    min-width: 250px;
-  }
-  .textBox {
-    /* height: 300px; */
-    width: 300px;
-  }
-
-  .smallTattoo {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-  }
-  .smallTattooRight {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 28px;
-  }
-
-  /* Dream Price */
-  .offerTitles {
-    font-size: 40px;
-    letter-spacing: 2px;
-    margin-top: 23px;
-  }
-  .smallTattooImg {
-    object-fit: contain;
-    width: 95%;
-    height: 95%;
-  }
-
-  .bestworkImg {
-    object-fit: fill;
-  }
-
-  .bestworkGrid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 17px;
-    justify-items: center;
-  }
-  .footer__logo-text {
-    font-size: 2rem;
-  }
-
-  .container {
-    margin: auto 2rem;
-    padding: 2px;
-  }
-}
-
-@media (min-width: 375px) and (max-width: 424px) {
-  /* mobile */
-  .artistImg {
-    width: 500px;
-    height: 500px;
-  }
-
-  /* Home page */
-  li {
-    font-size: 14px;
-  }
-  .navbarList {
-    gap: 5px;
-  }
-  .navbar {
-    height: 44px;
-  }
-  .btn {
-    background-color: #000;
-    height: 90px;
-  }
-  .logo {
-    width: 109px;
-    height: 90px;
-  }
-
-  .hero-video {
-    width: 368px;
-    height: 100%;
-  }
-  .textDiv h2 {
-    font-size: 28px;
-    line-height: 28px;
-    letter-spacing: 2px;
-  }
-  .textDiv h4 {
-    font-size: 11px;
-    line-height: 16px;
-    letter-spacing: 1px;
-    margin-top: 5px;
-  }
-
-  .heroBtn {
-    margin: 11px auto;
-    padding: 14px 16px;
-  }
-
-  .serviceBody {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-  .serviceBodyLeft {
-    max-width: 85%;
-    display: flex;
-    padding: 14px 0 0 0;
-  }
-
-  .serviceBodyRight {
-    width: 89%;
-  }
-
-  .serviceBodyLeftTitle {
-    font-size: 25px;
-    letter-spacing: 3px;
-    min-width: 250px;
-  }
-  .textBox {
-    /* height: 300px; */
-    width: 300px;
-  }
-
-  .smallTattoo {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-  }
-  .smallTattooRight {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 28px;
-  }
-
-  /* Dream Price */
-  .offerTitles {
-    font-size: 21px;
-    letter-spacing: 1px;
-  }
-  .smallTattooImg {
-    object-fit: contain;
-    width: 95%;
-    height: 95%;
-  }
-
-  .bestworkImg {
-    object-fit: fill;
-  }
-
-  .bestworkGrid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 17px;
-    justify-items: center;
-  }
-  .footer__logo-text {
-    font-size: 2rem;
-  }
-
-  .container {
-    margin: auto 2rem;
-    padding: 2px;
-  }
-
-  .serviceBtn {
-    padding: 13px 12px;
-    font-size: 11px;
-    margin: 2px 0;
-  }
-}
-
 @media (min-width: 690px) and (max-width: 990px) {
   .bestworkGrid {
     display: grid;
@@ -1944,7 +1870,7 @@ input[type="range"]::-moz-range-thumb {
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1800px) {
   /* XXLarger devices */
   .logo {
     width: 170px;
