@@ -110,7 +110,7 @@ const IndividualReward = ({ params }) => {
                       max="12"
                       step="3"
                       value={months}
-                      onChange={(e) => setMonths(parseInt(e.target.value))}
+                      onChange={(e) => setMonths(e.target.value)}
                     />
                     <div className="tenure-marks">
                       <span>3</span>
