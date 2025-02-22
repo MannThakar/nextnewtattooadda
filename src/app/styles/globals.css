@@ -136,7 +136,7 @@
 .navbar {
   height: 56px;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   border-bottom: 1px solid black;
 }
@@ -1337,7 +1337,7 @@ input[type="range"]::-moz-range-thumb {
   .individualArtistTitle {
     font-size: 30px;
     margin-top: 53px;
-    justify-content: start;
+    justify-content: flex-start;
   }
   .individualArtistLink {
     margin-top: 0px;
@@ -1424,7 +1424,7 @@ input[type="range"]::-moz-range-thumb {
   .individualArtistTitle {
     font-size: 33px;
     margin-top: 53px;
-    justify-self: start;
+    justify-self: flex-start;
   }
   .individualArtistLink {
     margin-top: 0px;
