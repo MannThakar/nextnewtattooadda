@@ -5,7 +5,6 @@ import Offers from "./(offers)/offers/page";
 import Artist from "./(artist)/artist/page";
 import FAQ from "./(faq)/faq/page";
 import Bestwork from "./(bestwork)/bestwork";
-
 import Reward from "./(reward)/reward/page";
 import NavbarSecond from "@/common/NavbarSecond";
 
