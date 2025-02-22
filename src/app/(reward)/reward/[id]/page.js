@@ -16,7 +16,7 @@ const IndividualReward = ({ params }) => {
 
   useEffect(() => {
     // Calculate 50% of price as down payment
-    if (price < 10000) {
+    if (price < 10000 || price == "") {
       return;
     }
     const calculatedDownPayment = price * 0.6;
@@ -29,7 +29,12 @@ const IndividualReward = ({ params }) => {
   }, [price, months]);
 
   const handlePriceChange = (e) => {
+    if (e.target.value == "") {
+      setPrice(10000);
+      return;
+    }
     const value = parseInt(e.target.value);
+
     if (value < 10000) {
       setPrice(10000);
     } else {

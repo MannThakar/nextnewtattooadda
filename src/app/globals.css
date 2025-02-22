@@ -109,7 +109,6 @@
 .logoImg {
   width: 120%;
   height: 100%;
-
   object-fit: cover;
   cursor: pointer;
   margin-left: 15px;
@@ -246,6 +245,14 @@ a {
   border-radius: 5px;
   font-weight: bold;
   transition: background-color 0.3s ease;
+}
+
+.heroText {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 /*Services Section*/
@@ -428,9 +435,6 @@ a {
   }
 }
 
-.heroText {
-  flex-direction: column;
-}
 /*Best Work Section*/
 
 .bestwork {
@@ -471,7 +475,7 @@ a {
 
 /*FAQ*/
 .faq-container {
-  margin: 100px auto 100px;
+  margin: 0px auto 60px;
   font-family: Arial, sans-serif;
 }
 
@@ -738,6 +742,7 @@ a {
   border-radius: 20px;
   height: 450px;
   margin-left: 20px;
+  width: 90%;
 }
 
 .carouselCardTitle {
@@ -773,7 +778,7 @@ a {
 }
 .RewardTitle {
   font-family: "Bebas Neue", serif;
-  font-size: 48px;
+  font-size: 28px;
   font-weight: bold;
   letter-spacing: 4px;
   margin-bottom: 20px;
@@ -913,9 +918,7 @@ a {
 }
 
 .customCarouselWorkImg {
-  width: 500px;
   height: 500px;
-  margin-left: 10px !important;
 }
 
 /* styles/globals.css */
@@ -1149,7 +1152,8 @@ input[type="range"]::-moz-range-thumb {
   /* mobile */
   .artistImg {
     width: 500px;
-    height: 500px;
+    height: 400px;
+    object-fit: cover;
   }
 
   /* Home page */
@@ -1234,7 +1238,7 @@ input[type="range"]::-moz-range-thumb {
 
   /* Dream Price */
   .offerTitles {
-    font-size: 22px;
+    font-size: 28px;
     letter-spacing: 1px;
   }
   .smallTattooImg {
@@ -1357,6 +1361,15 @@ input[type="range"]::-moz-range-thumb {
   }
 }
 @media (min-width: 425px) and (max-width: 768px) {
+  .heroVideo {
+    width: 100%; /* Full width */
+    height: 400px;
+    object-fit: cover;
+  }
+  .heroSubText {
+    text-align: left !important;
+  }
+
   .rewardAccordion {
     margin-top: 100px;
   }
@@ -1439,8 +1452,9 @@ input[type="range"]::-moz-range-thumb {
   /* mobile */
 
   .artistImg {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
   }
 
   /* Home page */
@@ -1492,24 +1506,30 @@ input[type="range"]::-moz-range-thumb {
     flex-direction: column-reverse;
   }
   .serviceBodyLeft {
-    max-width: 85%;
     display: flex;
     padding: 14px 0 0 0;
     width: 100%;
   }
 
   .serviceBodyRight {
-    width: 89%;
+    width: 100%;
   }
 
   .serviceBodyLeftTitle {
-    font-size: 25px;
+    font-size: 24px;
     letter-spacing: 3px;
     min-width: 250px;
   }
   .textBox {
     /* height: 300px; */
-    width: 300px;
+    width: 100%;
+  }
+  .serviceBodyLeftPara {
+    text-align: left;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 16px;
+    width: 100%;
   }
 
   .smallTattoo {
@@ -1526,7 +1546,7 @@ input[type="range"]::-moz-range-thumb {
 
   /* Dream Price */
   .offerTitles {
-    font-size: 40px;
+    font-size: 28px;
     letter-spacing: 2px;
     margin-top: 23px;
   }
@@ -1535,11 +1555,40 @@ input[type="range"]::-moz-range-thumb {
     width: 95%;
     height: 95%;
   }
-
+  .offerTattoo {
+    margin-top: 60px;
+  }
   .bestworkImg {
     object-fit: fill;
   }
 
+  .smallTattooRightText h4 {
+    font-size: 16px;
+  }
+  .smallTattooRightText p {
+    margin-top: 16px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .smallTattoo h2 {
+    margin-top: 24px;
+    font-size: 24px;
+    font-family: "Bebas Neue", serif;
+    letter-spacing: 4px;
+  }
+  .smallTattooRightBtn {
+    margin-top: 24px;
+    background-color: #1e40af;
+    height: 40px;
+    width: 150px;
+  }
+  .bestwork {
+    margin-top: 60px;
+  }
+  .bestworkImg {
+    width: 100%;
+    height: 500px;
+  }
   .bestworkGrid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -1557,6 +1606,71 @@ input[type="range"]::-moz-range-thumb {
 }
 
 @media (max-width: 768px) {
+  .btn {
+    height: 70px;
+    width: 180px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 500;
+    word-spacing: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+  .logo {
+    width: 60px;
+    height: 70px;
+  }
+  .logoImg {
+    object-fit: cover;
+    width: 200%;
+    height: 100%;
+    cursor: pointer;
+    margin-left: 15px;
+  }
+  .navbar {
+    height: 50px;
+  }
+  .navbarList {
+    height: 100%;
+  }
+  .navbar li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 500;
+    height: 100%;
+  }
+  .animatedText {
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 5px;
+    font-weight: bolder;
+    display: inline;
+  }
+  .heroSpan {
+    display: inline;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    color: #1e40af; /* Use contrasting colors */
+    text-shadow: 6px 6px var(--shadow), 3px 3px var(--shadow);
+  }
+  .heroText {
+    display: block;
+    margin-top: 20px;
+    font-size: 24px;
+  }
+  .service {
+    margin-top: 60px;
+  }
+
   .calculator-container {
     flex-direction: column;
     gap: 2rem;
@@ -1645,10 +1759,7 @@ input[type="range"]::-moz-range-thumb {
   }
 
   /* Dream Price */
-  .offerTitles {
-    font-size: 40px;
-    letter-spacing: 2px;
-  }
+
   .smallTattooImg {
     object-fit: contain;
     width: 95%;
@@ -1687,8 +1798,13 @@ input[type="range"]::-moz-range-thumb {
 
 @media (max-width: 768px) {
   .artistImg {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  .rewardBox {
+    margin-top: 60px;
+    margin-bottom: 100px;
   }
 }
 
@@ -1711,10 +1827,7 @@ input[type="range"]::-moz-range-thumb {
     padding: 18px 30px;
     font-size: 18px;
   }
-  .offerTitles {
-    font-size: 56px;
-    margin-top: 9px;
-  }
+
   .smallTattooRightText h4 {
     font-size: 24px;
   }
@@ -1876,8 +1989,9 @@ input[type="range"]::-moz-range-thumb {
 
 @media (max-width: 768px) {
   .artistImg {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
   }
 }
 

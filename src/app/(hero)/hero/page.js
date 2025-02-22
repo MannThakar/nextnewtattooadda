@@ -12,14 +12,7 @@ const HeroSection = () => {
           </video>
         </div>
         <div className="heroContainer">
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              marginTop: "40px",
-            }}
-            className="heroText"
-          >
+          <div className="heroText">
             <BlurText
               text="Crafting Masterpieces With"
               delay={200}
@@ -35,7 +28,10 @@ const HeroSection = () => {
               className="heroSpan"
             />
           </div>
-          <h4 style={{ marginTop: "10px", textAlign: "center" }}>
+          <h4
+            style={{ marginTop: "10px", textAlign: "center" }}
+            className="heroSubText"
+          >
             Safe, clean, and creative tattooing services.
           </h4>
 
