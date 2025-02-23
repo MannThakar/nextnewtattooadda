@@ -18,9 +18,9 @@ const nextConfig = {
 
     return config;
   },
-  eslint: {
-    ignoreDuringBuilds: true, // Avoid ESLint errors blocking the build
-  },
+  // eslint: {
+  //   ignoreDuringBuilds: true, // Avoid ESLint errors blocking the build
+  // },
   typescript: {
     ignoreBuildErrors: true, // If using TypeScript, avoid blocking errors
   },
