@@ -5,7 +5,9 @@ import {
   MessageCircleQuestion,
   FolderHeart,
   Info,
+  Zap,
 } from "lucide-react";
+
 import Link from "next/link";
 
 const NavbarSecond = () => {
@@ -47,6 +49,12 @@ const NavbarSecond = () => {
             <Info className="navIcons" />
             About
           </a>
+        </li>
+        <li>
+          <Link href="/artschool">
+            <Zap className="navIcons" />
+            Art School
+          </Link>
         </li>
       </ul>
     </nav>

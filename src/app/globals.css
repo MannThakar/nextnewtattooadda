@@ -152,7 +152,7 @@
 .navbar li {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 8px;
   font-size: 18px;
   text-transform: uppercase;
   cursor: pointer;
@@ -168,6 +168,10 @@ a {
   border-bottom: 3px solid #1e40af;
   padding-bottom: 2px;
   width: fit-content;
+}
+.navbar a {
+  display: flex;
+  align-items: center;
 }
 .navIcons {
   height: 20px;
@@ -186,7 +190,6 @@ a {
 }
 
 .textDiv h2 {
-  /* font-family: "Playfair Display", serif; */
   font-family: "Roboto", serif;
 
   font-weight: bolder;

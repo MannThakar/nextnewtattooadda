@@ -1,5 +1,8 @@
 /*Hemal Barot Work*/
 
+import { Award, Brain, Castle, Earth, ShieldCheck, Trophy } from "lucide-react";
+import React from "react";
+
 export const BESTWORK_IMAGES = [
   "/Bestwork/01_Bestwork.jpg",
   "/Bestwork/02_Bestwork.jpg",
@@ -420,5 +423,50 @@ export const INDIVIDUAL_CAROUSEL_DATA = [
           "Life happens! If you need to cancel or reschedule, please let us know at least 24 hours in advance. We’re flexible, but a heads-up keeps everything running smoothly",
       },
     ],
+  },
+];
+
+export const WHY_US_DATA = [
+  {
+    id: 1,
+    icons: <Earth size={50} />,
+    title: "360° Training Programs",
+    description:
+      "Tattoo Adda Academy offers 360° tattoo training, covering tattoo art, digital design, business growth, and client management. Learn from experts and turn your passion into a thriving career.",
+  },
+  {
+    id: 2,
+    icons: <Trophy size={50} />,
+    title: "Award Winning Mentors",
+    description:
+      "Learn from award-winning tattoo artists with expertise in anatomy, design, and execution. Get inspired, master your craft, and build your future in the tattoo industry with Tattoo Adda! 🎨✨",
+  },
+  {
+    id: 3,
+    icons: <ShieldCheck size={50} />,
+    title: "Safety First Protocol",
+    description:
+      "At Tattoo Adda, safety comes first. Our academy is sanitized weekly, ensuring a hygienic learning space. Students follow strict health protocols to maintain a safe tattooing environment. 🛡️✨",
+  },
+  {
+    id: 4,
+    icons: <Award size={50} />,
+    title: "Certified Courses ",
+    description:
+      "Tattoo Adda's courses are for all aspiring artists, covering ink application, tattoo history, and pro techniques. Master the skills needed to become a successful tattoo artist",
+  },
+  {
+    id: 5,
+    icons: <Brain size={50} />,
+    title: "Crafted for Creativity",
+    description:
+      "Our state-of-the-art facility is designed to inspire and empower artists. With top-tier equipment and a professional setup.",
+  },
+  {
+    id: 6,
+    icons: <Castle size={50} />,
+    title: "Crafted for Creativity",
+    description:
+      " Our Tattoo School, designed by artists, inspires creativity and productivity, helping artists focus on their craft and express themselves through tattoos with fewer distractions.",
   },
 ];
